@@ -149,83 +149,13 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="main-container">
-        {/* Header  */}
-        <header className="navbar">
-          <div className="navbar-inner">
-            <a className="logo" href="#">
-              <img
-                src="/image/logo-1.png"
-                alt="Omega Prime Trading Logo"
-                className="logo-img"
-              />
-            </a>
-
-            <button className="menu-toggle" aria-label="Toggle navigation">
-              <span className="menu-icon"></span>
-            </button>
-
-            <div className="menu" id="navbarMenu">
-              <ul className="menu-list">
-                <li>
-                  <a href="#" className="menu-link active">
-                    About Us
-                  </a>
-                </li>
-                <li className="menu-dropdown">
-                  <a href="#" className="menu-link">
-                    Services
-                  </a>
-                  <ul className="dropdown">
-                    <li>
-                      <a href="#">Service 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Service 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="menu-dropdown">
-                  <a href="#" className="menu-link">
-                    Solutions
-                  </a>
-                  <ul className="dropdown">
-                    <li>
-                      <a href="#">Solution 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Solution 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#" className="menu-link">
-                    Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="menu-link">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="btn-contact">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
-      </div>
-
       {/*  Building */}
       <section className="hero flex items-center justify-center py-32">
         <div className="container text-center">
           <h1 className="text-4xl font-bold">
             Unlock unlimited growth with premium custom development
           </h1>
-          <button className="btn btn-white mt-4 rounded-2xl bg-white  text-[#85005f] font-bold py-3 px-8 hover:bg-gray-100 hover:text-[#600047]">
+          <button className="btn btn-white mt-6  rounded-2xl bg-white  text-[#85005f] font-bold py-9 px-9 hover:bg-gray-100 hover:text-[#600047]">
             Start Building Today!
           </button>
         </div>
@@ -393,37 +323,39 @@ const HeroSection = () => {
 
       {/* OUR TESTIMONIALS */}
       <section className="testimonial-section">
-    <div className="container">
-      <h2 className="testimonial-title">OUR TESTIMONIALS</h2>
+        <div className="container">
+          <h2 className="testimonial-title">OUR TESTIMONIALS</h2>
 
-      <div className="testimonial-carousel">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial-item">
-            <div className="testimonial-box">
-              <p>{testimonial.text}</p>
-              <div className="stars">★ ★ ★ ★ ★</div>
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="testimonial-image"
-              />
-              <div className="testimonial-name">{testimonial.name}</div>
-              <div className="testimonial-position">{testimonial.title}</div>
-            </div>
+          <div className="testimonial-carousel">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="testimonial-item">
+                <div className="testimonial-box">
+                  <p>{testimonial.text}</p>
+                  <div className="stars">★ ★ ★ ★ ★</div>
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="testimonial-image"
+                  />
+                  <div className="testimonial-name">{testimonial.name}</div>
+                  <div className="testimonial-position">
+                    {testimonial.title}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="testimonial-controls">
-        <button className="arrow" onClick={handlePrev}>
-          ‹
-        </button>
-        <button className="arrow" onClick={handleNext}>
-          ›
-        </button>
-      </div>
-    </div>
-  </section>
+          <div className="testimonial-controls">
+            <button className="arrow" onClick={handlePrev}>
+              ‹
+            </button>
+            <button className="arrow" onClick={handleNext}>
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/*  GET FREE CONSULTATION */}
       <section className="cta-section">
