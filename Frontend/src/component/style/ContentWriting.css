@@ -1,0 +1,45 @@
+.content-writing-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .content {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+  
+  .content h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #444444;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555555;
+  }
+  
+  .content ul,
+  .content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content li {
+    margin-bottom: 0.5rem;
+  }
+  

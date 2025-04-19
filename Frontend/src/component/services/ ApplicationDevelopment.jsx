@@ -24,7 +24,7 @@ const Application = () => {
       <div className="container section">
         <div className="row align-items-center">
           <div className="col-md-6 mb-4 mb-md-0">
-            <img src="image/web-design.jpg" alt="Web Design" />
+            <img src="image/web design.png" alt="Web Design" />
           </div>
           <div className="col-md-6">
             <h4>Web Design</h4>

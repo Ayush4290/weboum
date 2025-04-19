@@ -53,7 +53,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="#" className="menu-link">
+                  <a href="/portfolio" className="menu-link">
                     Portfolio
                   </a>
                 </li>
@@ -63,7 +63,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="btn-contact">
+                  <a href="/contact" className="btn-contact">
                     Contact Us
                   </a>
                 </li>
