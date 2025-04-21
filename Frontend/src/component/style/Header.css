@@ -95,7 +95,7 @@
 
 .dropdown li a {
   color: #333;
-  padding: 0.7rem 1.5rem;
+  padding: 0.1rem .6rem;
   display: block;
   text-decoration: none;
   transition: background 0.2s;
