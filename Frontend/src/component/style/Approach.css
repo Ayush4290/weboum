@@ -1,143 +1,139 @@
 :root {
-    --primary-font: 'Segoe UI', sans-serif;
-    --background-color: #fff;
-    --text-color: #333;
-    --primary-color: #87005a;
-    --primary-color-hover: #6c0048;
-    --form-label-color: #555;
-    --form-bg-color: #f8f9fa;
-    --form-border-color: #ced4da;
+  --primary-color: #a104b5;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+}
+
+.approach-section {
+  background-color: var(--bg-color);
+  padding: 60px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.approach-row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.approach-left {
+  flex: 1 1 40%;
+}
+
+.approach-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.approach-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 25px;
+}
+
+.approach-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.approach-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.approach-icons a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.approach-form {
+  flex: 1 1 55%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.approach-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.approach-form label {
+  font-weight: 500;
+  color: #222;
+}
+
+.approach-form input,
+.approach-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.approach-form input:focus,
+.approach-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.approach-form button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.approach-form button:hover {
+  background: #85018f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .approach-row {
+    flex-direction: column;
   }
-  
-  body {
-    font-family: var(--primary-font);
-    background-color: var(--background-color);
-    color: var(--text-color);
+
+  .approach-left,
+  .approach-form {
+    flex: 1 1 100%;
   }
-  
-  .contact-section {
-    padding: 80px 20px;
+
+  .approach-heading {
+    font-size: 26px;
   }
-  
-  .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+
+  .approach-form {
+    padding: 20px;
   }
-  
-  .contact-left {
-    padding-left: 40px;
-    flex: 1;
-  }
-  
-  .contact-left p {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .contact-left h2 {
-    font-weight: bold;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    font-size: 20px;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    line-height: 34px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .social-icons a:hover {
-    background-color: var(--primary-color);
-    color: white;
-  }
-  
-  .contact-right {
-    flex: 1;
-  }
-  
-  .contact-form {
-    max-width: 600px;
-    margin-top: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--form-label-color);
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid var(--form-border-color);
-    border-radius: 4px;
-    background-color: var(--form-bg-color);
-    transition: border-color 0.3s;
-  }
-  
-  .form-control:focus {
-    border-color: var(--primary-color);
-  }
-  
-  .checkbox-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox-group input {
-    margin-right: 5px;
-  }
-  
-  .btn-submit {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-submit:hover {
-    background-color: var(--primary-color-hover);
-  }
-  
-  @media (max-width: 991px) {
-    .contact-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .contact-left {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .social-icons {
-      justify-content: center;
-    }
-  
-    .contact-right {
-      width: 100%;
-    }
-  }
-  
+}

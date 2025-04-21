@@ -10,11 +10,7 @@
   --paragraph-line-height: 1.8;
 }
 
-body {
-  font-family: var(--primary-font);
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
+
 
 .section {
   padding: var(--section-padding);

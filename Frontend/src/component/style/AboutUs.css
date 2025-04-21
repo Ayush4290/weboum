@@ -9,12 +9,7 @@
     --form-border-color: #ced4da;
   }
   
-  body {
-    font-family: var(--primary-font);
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
+
   .abbreviation b {
     display: block;
     margin-top: 20px;
@@ -35,7 +30,7 @@
   /* 30 Days Support Section */
   .offer-section {
     padding: 60px 20px;
-    background: url('image/background.jpeg'); /* Optional background */
+    background: url('image/background.jpeg'); 
     width: 100%;
     background-size: cover;
   }

@@ -117,8 +117,8 @@ const HeroSection = () => {
   ];
   const testimonials = [
     {
-      name: "Jill Caruana",
-      title: "CEO, Jill Melyssa Corp, NY",
+      name: "Jill Cabana",
+      title: "CEO, Jill Melissa Corp, NY",
       text: "I would highly recommend using Guru and for your web design needs. He offers a reliable and affordable service that never compromises quality.",
       image: "jill.jpg",
     },
@@ -129,14 +129,14 @@ const HeroSection = () => {
       image: "mohamed.jpg",
     },
     {
-      name: "Andrea Heuston",
+      name: "Andrea Houston",
       title: "CEO, Lead Like a Woman, USA",
       text: "Pawna and team was wonderful to work with! Very responsive and asking for details when needed. I really appreciated her outstanding work on this project.",
       image: "andrea.jpg",
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [setCurrentSlide] = useState(0);
 
   const handlePrev = () =>
     setCurrentSlide((prev) =>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style/Header.css";
-import { FaChevronDown } from "react-icons/fa";
+import { BiCaretDown } from "react-icons/bi";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -42,7 +42,7 @@ const Header = () => {
                   className="menu-link"
                   onClick={() => toggleDropdown("about")}
                 >
-                  About Us <FaChevronDown className="menu-icon" />
+                  About Us <BiCaretDown className="menu-icon" />
                 </div>
                 <ul
                   className={`dropdown ${
@@ -71,7 +71,7 @@ const Header = () => {
                   className="menu-link"
                   onClick={() => toggleDropdown("services")}
                 >
-                  Services <FaChevronDown className="menu-icon" />
+                  Services <BiCaretDown className="menu-icon" />
                 </div>
                 <ul
                   className={`dropdown ${
@@ -103,7 +103,7 @@ const Header = () => {
                   className="menu-link"
                   onClick={() => toggleDropdown("solutions")}
                 >
-                  Solutions <FaChevronDown className="menu-icon" />
+                  Solutions <BiCaretDown className="menu-icon" />
                 </div>
                 <ul
                   className={`dropdown ${
@@ -157,7 +157,7 @@ const Header = () => {
 
       <div className="hero-section">
         <h1>Unlock unlimited growth with premium custom development</h1>
-        <a href="/" className="cta-button">
+        <a href="/" className="cta-buttons">
           Start Building Today!
         </a>
       </div>

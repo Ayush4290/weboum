@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Application.css';
+import '../style/ApplicationDevelopment.css';
 
 const AppSections = () => {
   return (

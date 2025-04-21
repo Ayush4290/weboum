@@ -1,59 +1,54 @@
-import React from 'react';
-import '../style/Approach.css';
+import React from "react";
+import "../style/Approach.css";
 
-import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa';
+// Importing icons from react-icons
+import { FaFacebookF, FaTimes, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
-const Approach = () => {
+const ApproachUs = () => {
   return (
-    <section className="contact-section">
-      <div className="contact-container">
-        {/* Left content */}
-        <div className="contact-left">
-          <p className="fw-bold text-uppercase">Weboum – Send Us A Message</p>
-          <h2 className="fw-bold">Do You Have Any Questions?<br />We’ll Be Happy To Assist!</h2>
-          <div className="social-icons">
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaXTwitter /></a>
+    <section className="approach-section">
+      <div className="approach-row">
+        {/* Left Section */}
+        <div className="approach-left">
+          <p className="approach-title">WEBOUM – SEND US A MESSAGE</p>
+          <h2 className="approach-heading">
+            Do You Have Any Questions?
+            <br />
+            We’ll Be Happy To Assist!
+          </h2>
+          <div className="approach-icons">
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaTimes /></a>
             <a href="#"><FaYoutube /></a>
-            <a href="#"><FaLinkedin /></a>
+            <a href="#"><FaLinkedinIn /></a>
             <a href="#"><FaInstagram /></a>
           </div>
         </div>
 
-        {/* Right form */}
-        <div className="contact-right">
-          <form className="contact-form">
-            <div className="form-group">
-              <label htmlFor="name" className="form-label">Name</label>
-              <input type="text" className="form-control" id="name" required />
-            </div>
+        {/* Right Form */}
+        <div className="approach-form">
+          <form>
+            <label>Name</label>
+            <input type="text" name="name" required />
 
-            <div className="form-group">
-              <label htmlFor="email" className="form-label">Email</label>
-              <input type="email" className="form-control" id="email" required />
-            </div>
+            <label>Email</label>
+            <input type="email" name="email" required />
 
-            <div className="form-group">
-              <label htmlFor="phone" className="form-label">Phone</label>
-              <input type="tel" className="form-control" id="phone" />
-            </div>
+            <label>Phone</label>
+            <input type="tel" name="phone" />
 
-            <div className="form-group">
-              <label htmlFor="subject" className="form-label">Subject</label>
-              <input type="text" className="form-control" id="subject" />
-            </div>
+            <label>Subject</label>
+            <input type="text" name="subject" />
 
-            <div className="form-group">
-              <label htmlFor="message" className="form-label">Message</label>
-              <textarea className="form-control" id="message" rows="4" required></textarea>
-            </div>
+            <label>Message</label>
+            <textarea rows="5" name="message" required></textarea>
 
-            <div className="form-group checkbox-group">
+            <div className="captcha-box">
               <input type="checkbox" id="captcha" />
-              <label htmlFor="captcha">I'm not a robot</label>
+              <label htmlFor="captcha"> I'm not a robot</label>
             </div>
 
-            <button type="submit" className="btn-submit">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -61,4 +56,4 @@ const Approach = () => {
   );
 };
 
-export default Approach;
+export default ApproachUs;

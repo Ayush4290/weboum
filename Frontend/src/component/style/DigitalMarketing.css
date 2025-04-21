@@ -1,0 +1,267 @@
+.marketing-agency {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.marketing-agency h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.marketing-agency > p {
+  max-width: 900px;
+  margin: 0 auto 15px;
+  font-size: 17px;
+}
+
+.marketing-content {
+  background-color: #eaf4f9;
+  margin-top: 40px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.image-container {
+  flex: 1 1 350px;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text-content {
+  flex: 1 1 350px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.text-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .marketing-content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+}
+
+.sociable-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.sociable-text {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.sociable-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sociable-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.sociable-image {
+  flex: 1 1 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sociable-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .sociable-section {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+  }
+
+  .sociable-text {
+    text-align: center;
+  }
+}
+
+.social-benefits-section {
+  padding: 60px 20px;
+  background-color: #f5fafd;
+  text-align: center;
+}
+
+.social-benefits-section .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.social-benefits-section .section-subtitle {
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefit-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-box .icon i {
+  color: #800080;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.benefit-box h3 {
+  font-size: 18px;
+  color: #990066;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.benefit-box p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.brand-voice-section {
+  padding: 60px 20px;
+  background-color: #f3f6fb;
+  text-align: center;
+}
+
+.brand-voice-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.brand-voice-section .content-box {
+  background: white;
+  padding: 25px;
+  margin: 0 auto 30px;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.why-work-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-work-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.why-work-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-work-section li {
+  position: relative;
+  padding: 10px 20px 10px 40px;
+  margin: 10px 0;
+  text-align: left;
+  border-bottom: 2px solid #a200a2;
+}
+
+.why-work-section li::before {
+  content: "\2714";
+  color: blue;
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  top: 10px;
+}
+
+.cta-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.cta-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.cta-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+

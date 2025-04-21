@@ -41,6 +41,7 @@
 
 /* services */
 /* Container */
+/* ServicesSection.css */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,11 +68,11 @@
   background: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  top: -30px;
 }
 
 /* Sidebar */
 .sidebar {
+  width: 200px;
   background: white;
   border-radius: 10px;
   padding: 20px;
@@ -179,12 +180,14 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #f0f0f0;
 }
 
 .why-subtitle {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 20px;
+  color: white;
 }
 
 .why-lead {
@@ -254,7 +257,7 @@
 }
 
 .process-image {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -278,6 +281,8 @@
   background-color: #fff;
   border-radius: 12px;
   padding: 40px;
+  flex: auto;
+  right: -30px;
   width: 100%;
   max-width: 500px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -428,7 +433,7 @@ textarea.form-control {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .cta-left {
@@ -438,8 +443,7 @@ textarea.form-control {
 .cta-heading {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 12px;
-  color: #000;
+  color: #09080d;
 }
 
 .cta-text {
