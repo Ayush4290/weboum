@@ -149,18 +149,6 @@ const HeroSection = () => {
 
   return (
     <>
-      {/*  Building */}
-      <section className="hero flex items-center justify-center py-32">
-        <div className="container text-center">
-          <h1 className="text-4xl font-bold">
-            Unlock unlimited growth with premium custom development
-          </h1>
-          <button className="btn btn-white mt-6  rounded-2xl bg-white  text-[#85005f] font-bold py-9 px-9 hover:bg-gray-100 hover:text-[#600047]">
-            Start Building Today!
-          </button>
-        </div>
-      </section>
-
       {/* our services  */}
       <div>
         <section className="services-section">
