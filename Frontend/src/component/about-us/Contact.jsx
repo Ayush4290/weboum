@@ -1,8 +1,13 @@
 import React from "react";
 import "../style/ContactUs.css";
 
-// Importing icons from react-icons
-import { FaFacebookF, FaTimes, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTimes,
+  FaYoutube,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -17,11 +22,21 @@ const Contact = () => {
             We’ll Be Happy To Assist!
           </h2>
           <div className="approach-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTimes /></a>
-            <a href="#"><FaYoutube /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaTimes />
+            </a>
+            <a href="#">
+              <FaYoutube />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
 

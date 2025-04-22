@@ -34,10 +34,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="top-part">Services</h4>
           <div className="footer-services">
-            <a href="/application-development">Application Development</a>
+            <a href="/application-developer">Application Development</a>
             <a href="/web-designing">Web Designing</a>
-            <a href="/web-development">Web Development</a>
-            <a href="/digital-marketing">Digital Marketing</a>
+            <a href="/web-developer">Web Development</a>
+            <a href="/digital-marketing-3">Digital Marketing</a>
             <a href="/graphic-design">Graphic Design</a>
             <a href="/content-writing">Content Writing</a>
             <a href="/logo-designs">All Logos Designs</a>

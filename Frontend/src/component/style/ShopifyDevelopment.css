@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #6a005f;
+  --text-color: #111;
+  --background-color: #fff;
+  --radius: 0.5rem;
+  --spacing: 1.5rem;
+  --max-width: 1200px;
+}
+
+.page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-section {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.text-section {
+  flex: 1 1 500px;
+  padding: 0 1rem;
+}
+
+.text-section h1,
+.container h1 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.text-section p,
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-top: 0.5rem;
+}
+
+.container ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.pt-24 {
+  padding-top: 100px;
+}
