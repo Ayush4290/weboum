@@ -19,21 +19,21 @@ const WhyUs = () => {
 
             {/* Features */}
             <div className="feature">
-              <img src="check-icon.png" alt="Check" />
+              <img src="image/background.jpeg" alt="Check" />
               <div>
                 <h6>High Customer Retention Rate</h6>
                 <p>We have a 100% retention rate...</p>
               </div>
             </div>
             <div className="feature">
-              <img src="check-icon.png" alt="Check" />
+              <img src="image/background.jpeg" alt="Check" />
               <div>
                 <h6>Ability To Meet Deadlines</h6>
                 <p>We are 100% clear on when work needs to be completed...</p>
               </div>
             </div>
             <div className="feature">
-              <img src="check-icon.png" alt="Check" />
+              <img src="image/background.jpeg" alt="Check" />
               <div>
                 <h6>Professional Team Member</h6>
                 <p>We have focused, creative team members...</p>

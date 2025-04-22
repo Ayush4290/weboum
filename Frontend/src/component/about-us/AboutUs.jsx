@@ -73,7 +73,7 @@ const AboutUs = () => {
             <a href="#" className="quote-btn">Request A FREE Quote ➜</a>
           </div>
           <div className="col-md-6 text-center">
-            <img src="image/android-app.jpg" alt="Android App Illustration" className="img-fluid" style={{ maxHeight: '400px', paddingBottom: '40px', paddingTop: '10px' }} />
+            <img src="image/android-app.jpg" alt="Android App Illustration" className="img-fluid" style={{ maxHeight: '800px', paddingBottom: '40px', paddingTop: '10px' }} />
           </div>
         </div>
       </section>

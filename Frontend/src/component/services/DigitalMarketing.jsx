@@ -1,8 +1,5 @@
-// DigitalMarketing.jsx
 import React from "react";
 import "../style/DigitalMarketing.css";
-import digitalImage1 from "../../../public/image/digital.jpg";
-import digitalImage2 from "../../../public/image/digital2.jpg";
 
 const DigitalMarketing = () => {
   return (
@@ -25,7 +22,7 @@ const DigitalMarketing = () => {
 
         <div className="marketing-content">
           <div className="image-container">
-            <img src={digitalImage1} alt="Social Media Campaign" />
+            <img src="/image/digital.jpg" alt="Social Media Campaign" />
           </div>
           <div className="text-content">
             <h3>
@@ -69,7 +66,10 @@ const DigitalMarketing = () => {
           </p>
         </div>
         <div className="sociable-image">
-          <img src={digitalImage2} alt="Social Media Icons Around Laptop" />
+          <img
+            src="/image/digital2.jpg"
+            alt="Social Media Icons Around Laptop"
+          />
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 :root {
-  --primary-font: 'Poppins', sans-serif;
+  --primary-font: "Poppins", sans-serif;
   --background-color: #f8f9fa;
   --text-color: #333;
   --section-bg-even: #eef7f9;
@@ -9,8 +9,6 @@
   --heading-margin-bottom: 20px;
   --paragraph-line-height: 1.8;
 }
-
-
 
 .section {
   padding: var(--section-padding);

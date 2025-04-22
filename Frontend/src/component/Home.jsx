@@ -120,19 +120,19 @@ const HeroSection = () => {
       name: "Jill Cabana",
       title: "CEO, Jill Melissa Corp, NY",
       text: "I would highly recommend using Guru and for your web design needs. He offers a reliable and affordable service that never compromises quality.",
-      image: "jill.jpg",
+      image: "image/contact.jpeg",
     },
     {
       name: "Mohamed Albastaki",
       title: "Founder, Equilibria Digital Solutions, Bahrain",
       text: "Guru and his team have been an invaluable partner, working with us on multiple long-term projects with exceptional professionalism.",
-      image: "mohamed.jpg",
+      image: "image/contact.jpeg",
     },
     {
       name: "Andrea Houston",
       title: "CEO, Lead Like a Woman, USA",
       text: "Pawna and team was wonderful to work with! Very responsive and asking for details when needed. I really appreciated her outstanding work on this project.",
-      image: "andrea.jpg",
+      image: "image/contact.jpeg",
     },
   ];
 
