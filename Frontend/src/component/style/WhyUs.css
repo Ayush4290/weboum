@@ -122,6 +122,7 @@
 
 .support-text {
   flex: 1 1 50%;
+  
 }
 
 .support-text h2 {
@@ -167,7 +168,8 @@
 }
 
 .image-container img {
-  max-height: 900px;
+ 
+  max-height: 700px;
   width: 160%;
   object-fit: contain;
 }

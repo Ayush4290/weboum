@@ -1,13 +1,13 @@
 import React from "react";
 import "../style/WebDevelopment.css";
-import { 
-  FaExpandArrowsAlt, 
-  FaUsersCog, 
-  FaFileCode, 
+import {
+  FaExpandArrowsAlt,
+  FaUsersCog,
+  FaFileCode,
   FaBolt,
-  FaLaptop, 
-  FaCodeBranch, 
-  FaProjectDiagram, 
+  FaLaptop,
+  FaCodeBranch,
+  FaProjectDiagram,
   FaCog,
   FaSignInAlt,
   FaMobileAlt,
@@ -23,21 +23,26 @@ import {
   FaJava,
   FaPython,
   FaNode,
-  FaPhp
+  FaPhp,
 } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
-import { SiJsonwebtokens, SiElm, SiAngular, SiJquery, SiExpress } from "react-icons/si";
+import {
+  SiJsonwebtokens,
+  SiElm,
+  SiAngular,
+  SiJquery,
+  SiExpress,
+} from "react-icons/si";
 
 function WebDevelopment() {
   return (
     <div className="web-development">
       {/* Feature Cards Section */}
       <div className="feature-bg-section">
-        <div className="container">
+        <div className="web-container">
           <div className="feature-row">
             <div className="feature-column">
               <div className="feature-card">
-                
                 <FaExpandArrowsAlt className="icons" />
                 <h5>Refreshingly Unique Model:</h5>
                 <p>
@@ -66,7 +71,7 @@ function WebDevelopment() {
 
             <div className="feature-column">
               <div className="feature-card">
-                <FaFileCode className="icons"/>
+                <FaFileCode className="icons" />
                 <h5>Low Cost, High Productivity Services:</h5>
                 <p>
                   No Overtime or Hidden Fees
@@ -171,8 +176,10 @@ function WebDevelopment() {
 
       {/* Custom Web Development Solutions Section */}
       <div className="solutions-bg-section">
-        <div className="container">
-          <h2 className="section-title-web">Custom Web Development Solutions</h2>
+        <div className="web-container">
+          <h2 className="section-title-web">
+            Custom Web Development Solutions
+          </h2>
           <p className="section-subtitle">
             Our Full-Stack Web Developers have the programming expertise and
             industry-specific experience to build, integrate, and customize your
@@ -316,7 +323,9 @@ function WebDevelopment() {
 
       {/* Process Section */}
       <div className="container-process-section">
-        <h2 className="section-title-web">Our Custom Web Development Process</h2>
+        <h2 className="section-title-web">
+          Our Custom Web Development Process
+        </h2>
         <p className="section-subtitle">
           We meet the demands of your business by executing our strategically
           planned processes for delivering top-of-the-line Custom Websites &
@@ -409,10 +418,10 @@ function WebDevelopment() {
           </div>
         </div>
       </div>
- 
+
       {/* Front-End Tech Section */}
       <div className="tech-section">
-        <div className="container">
+        <div className="web-container">
           <h2>Full-Stack Technology</h2>
           <p className="lead">
             Our Web Developers utilize multiple software platforms, providing
@@ -425,7 +434,7 @@ function WebDevelopment() {
           <div className="tech-grid">
             {/* JS */}
             <div className="tech-card-wrapper">
-              <FaJs className="tech-logo" style={{ color: '#f7df1e' }} />
+              <FaJs className="tech-logo" style={{ color: "#f7df1e" }} />
               <div className="tech-title">Javascript</div>
               <p className="tech-description">
                 Our software developers use JavaScript to calculate, manipulate,
@@ -436,7 +445,7 @@ function WebDevelopment() {
 
             {/* HTML */}
             <div className="tech-card-wrapper">
-              <FaHtml5 className="tech-logo" style={{ color: 'red' }}/>
+              <FaHtml5 className="tech-logo" style={{ color: "red" }} />
               <div className="tech-title">HTML</div>
               <p className="tech-description">
                 Our Software Development Team has many years of experience
@@ -469,7 +478,7 @@ function WebDevelopment() {
 
             {/* AngularJS */}
             <div className="tech-card-wrapper">
-              <SiAngular className="tech-logo"  style={{ color: 'red' }} />
+              <SiAngular className="tech-logo" style={{ color: "red" }} />
               <div className="tech-title">AngularJS</div>
               <p className="tech-description">
                 We use AngularJS for creating dynamic web applications,
@@ -480,7 +489,7 @@ function WebDevelopment() {
 
             {/* jQuery */}
             <div className="tech-card-wrapper">
-              <SiJquery className="tech-logo"  style={{ color: 'red' }}/>
+              <SiJquery className="tech-logo" style={{ color: "red" }} />
               <div className="tech-title">jQuery</div>
               <p className="tech-description">
                 We use jQuery to create animations, AJAX apps, and plug-ins on
@@ -494,14 +503,14 @@ function WebDevelopment() {
 
       {/* Back-End Tech Section */}
       <div className="tech-section">
-        <div className="container">
+        <div className="web-container">
           <h5>
             <em>Server Software (Back-End)</em>
           </h5>
           <div className="tech-grid">
             {/* PHP */}
             <div className="tech-card-wrapper">
-              <FaPhp className="tech-logo"  />
+              <FaPhp className="tech-logo" />
               <div className="tech-title">PHP</div>
               <p className="tech-description">
                 Our Software Development Team uses PHP frameworks to streamline
@@ -512,7 +521,7 @@ function WebDevelopment() {
 
             {/* Express.js */}
             <div className="tech-card-wrapper">
-              <SiExpress className="tech-logo" style={{ color: 'green' }}/>
+              <SiExpress className="tech-logo" style={{ color: "green" }} />
               <div className="tech-title">Express.js</div>
               <p className="tech-description">
                 Our developers utilize Express.js to simplify web app
@@ -523,7 +532,7 @@ function WebDevelopment() {
 
             {/* Node.js */}
             <div className="tech-card-wrapper">
-              <FaNode className="tech-logo"style={{ color: 'green' }} />
+              <FaNode className="tech-logo" style={{ color: "green" }} />
               <div className="tech-title">Node.js</div>
               <p className="tech-description">
                 We use Node.js to build traditional websites, back-end APIs, and
@@ -533,7 +542,7 @@ function WebDevelopment() {
 
             {/* Java */}
             <div className="tech-card-wrapper">
-              <FaJava className="tech-logo" style={{ color: '4584b6' }}/>
+              <FaJava className="tech-logo" style={{ color: "4584b6" }} />
               <div className="tech-title">JAVA</div>
               <p className="tech-description">
                 We use Java as a general-purpose language to develop mobile/web
@@ -553,7 +562,7 @@ function WebDevelopment() {
 
             {/* MongoDB */}
             <div className="tech-card-wrapper">
-              <DiMongodb className="tech-logo" style={{ color: 'green' }}/>
+              <DiMongodb className="tech-logo" style={{ color: "green" }} />
               <div className="tech-title">MongoDB</div>
               <p className="tech-description">
                 Our developers use MongoDB to optimize performance in

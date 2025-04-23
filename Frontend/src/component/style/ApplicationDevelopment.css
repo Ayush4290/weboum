@@ -11,13 +11,7 @@
   --max-width: 1200px;
 }
 
-body {
-  font-family: var(--primary-font);
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-}
+
 
 .Application-section {
   padding: var(--section-padding);
@@ -52,6 +46,7 @@ body {
   width: 100%;
   max-width: 500px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .Application-section-content .Application-section-text h4 {
@@ -62,7 +57,7 @@ body {
 
 .Application-section-content .Application-section-text p {
   line-height: var(--paragraph-line-height);
-  font-weight: 400; /* fixed typo (was 700px) */
+  font-weight: 400; 
   margin-bottom: 30px;
   font-size: 16px;
 }
@@ -82,6 +77,7 @@ body {
   .Application-section-content .Application-section-text {
     text-align: left;
     padding-left: 30px;
+    padding-top: 90px;
   }
 
   .Application-order-1 {

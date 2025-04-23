@@ -1,190 +1,501 @@
-// SamplePage.jsx
-import React, { useState,  } from "react";
-import "../style/ApproachUs.css";
+import React from "react";
+import "../style/samplePage.css";
+import {
+  Laptop,
+  ShoppingCart,
+  Tags,
+  Settings,
+  Users,
+  Map,
+  X,
+  Code,
+  UserCog,
+  Wrench,
+  CheckCircle,
+  Star,
+  Quote,
+} from "lucide-react";
 
-const tabs = ["all", "software", "apps", "graphics", "marketing"];
+const SamplePage = () => {
+  // Function to show tab content
+  const showTab = (tabId) => {
+    // Hide all portfolios
+    document
+      .querySelectorAll(".samplePage_portfolio")
+      .forEach((p) => p.classList.remove("samplePage_active"));
 
-const portfolioImages = {
-  all: [
-    "https://weboum.com/wp-content/uploads/2024/03/Bolster.jpg",
-    "https://weboum.com/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-17-at-15.36.26_d394359d.jpg",
-    "https://weboum.com/wp-content/uploads/2024/09/creative-version2-design.png",
-    "https://weboum.com/wp-content/uploads/2024/09/ngaging-Experiences-and-Curated-apps.jpg",
-    "https://weboum.com/wp-content/uploads/2024/03/Log-Me-Once.jpg",
-    "https://weboum.com/wp-content/uploads/2024/03/Hyleys.jpg",
-    "https://weboum.com/wp-content/uploads/2024/03/muskilongue-landing-page-V-1.jpg",
-    "https://weboum.com/wp-content/uploads/2021/05/phone-tab-lapitop.jpg",
-    "https://weboum.com/wp-content/uploads/2024/03/Georgynity.jpg",
-    "https://weboum.com/wp-content/uploads/2024/09/Children-s-Therapy-website.png",
-  ],
-  software: [2, 3],
-  apps: [4, 5],
-  graphics: [6, 7],
-  marketing: [8, 9],
-};
+    // Show selected
+    document.getElementById(tabId).classList.add("samplePage_active");
 
-function ApproachUs() {
-  const [activeTab, setActiveTab] = useState("all");
-  const [lightboxSrc, setLightboxSrc] = useState("");
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+    // Update active tab
+    document
+      .querySelectorAll(".samplePage_tab")
+      .forEach((t) => t.classList.remove("samplePage_active"));
+    document
+      .querySelector(`[data-category="${tabId}"]`)
+      .classList.add("samplePage_active");
+  };
 
+  // Function to open lightbox
   const openLightbox = (src) => {
-    setLightboxSrc(src);
-    setIsLightboxOpen(true);
+    document.getElementById("samplePage_lightbox-img").src = src;
+    document.getElementById("samplePage_lightbox").style.display = "flex";
   };
 
+  // Function to close lightbox
   const closeLightbox = () => {
-    setIsLightboxOpen(false);
+    document.getElementById("samplePage_lightbox").style.display = "none";
   };
 
-  const getActiveImages = () => {
-    return activeTab === "all"
-      ? portfolioImages.all
-      : portfolioImages[activeTab].map((i) => portfolioImages.all[i]);
-  };
+  // Add event listeners after component mounts
+  React.useEffect(() => {
+    document.querySelectorAll(".samplePage_item img").forEach((img) => {
+      img.addEventListener("click", () => openLightbox(img.src));
+    });
+  }, []);
 
   return (
-    <div className="samplePage-wrapper">
-      {/* Hero Section */}
-      <section className="samplePage-hero">
-        <div className="samplePage-content">
-          <h1>Build efficient Website for your Business</h1>
+    <div className="samplePage">
+      {/* Business section */}
+      <section className="samplePage_business-section samplePage_conta">
+        <div className="samplePage_content container">
+          <h1>
+            Build efficient Website
+            <br />
+            for your Business
+          </h1>
           <p>
-            In today’s digital world, having a professional and efficient website is essential for business growth. We specialize in creating modern, fast, and responsive websites.
+            In today's digital world, having a professional and efficient
+            website is essential for business growth. We specialize in creating
+            modern, fast, and responsive websites that help you reach your
+            target audience effectively.
           </p>
-          <div className="samplePage-buttons">
-            <a href="#" className="samplePage-btn-primary">Read More</a>
-            <a href="#" className="samplePage-btn-outline">✉ Contact Us</a>
+          <div className="samplePage_buttons">
+            <a href="#" className="samplePage_btn-primary">
+              Read More
+            </a>
+            <a href="#" className="samplePage_btn-outline">
+              <span>✉</span> Contact Us
+            </a>
           </div>
         </div>
-        <div className="samplePage-image">
-          <img src="image/Digital-Marketing.jpg" alt="Digital Marketing" />
+        <div className="samplePage_image">
+          <img
+            src="image/samplePage/development-about.jpg"
+            alt="Digital Marketing"
+          />
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="samplePage-servicess-section">
-        <div className="samplePage-servicess-container">
-          {["Webapps Development", "E-Commerce Solutions", "Branding Solutions", "Optimization Solutions", "UI/UX Solutions", "Marketing Solutions"].map((text, index) => (
-            <div className="samplePage-servicess-box" key={index}>
-              <div className="samplePage-icon-circle">
-                <i className="fas fa-laptop-code"></i>
-              </div>
-              <p>{text}</p>
+      {/* Services icons section */}
+      <section className="samplePage_servicess-section">
+        <div className="samplePage_servicess-container">
+          <div className="samplePage_servicess-box samplePage_webapps-dev">
+            <div className="samplePage_icon-circle">
+              <Laptop size={24} />
             </div>
-          ))}
+            <p>Webapps Development</p>
+          </div>
+          <div className="samplePage_servicess-box samplePage_ecommerce-sol">
+            <div className="samplePage_icon-circle">
+              <ShoppingCart size={24} />
+            </div>
+            <p>E-Commerce Solutions</p>
+          </div>
+          <div className="samplePage_servicess-box samplePage_branding-sol">
+            <div className="samplePage_icon-circle">
+              <Tags size={24} />
+            </div>
+            <p>Branding Solutions</p>
+          </div>
+          <div className="samplePage_servicess-box samplePage_optimization-sol">
+            <div className="samplePage_icon-circle">
+              <Settings size={24} />
+            </div>
+            <p>Optimization Solutions</p>
+          </div>
+          <div className="samplePage_servicess-box samplePage_uiux-sol">
+            <div className="samplePage_icon-circle">
+              <Users size={24} />
+            </div>
+            <p>UI/UX Solutions</p>
+          </div>
+          <div className="samplePage_servicess-box samplePage_marketing-sol">
+            <div className="samplePage_icon-circle">
+              <Map size={24} />
+            </div>
+            <p>Marketing Solutions</p>
+          </div>
         </div>
       </section>
 
-      {/* Portfolio Tabs */}
-      <div className="samplePage-tabs">
-        {tabs.map((tab) => (
-          <div
-            key={tab}
-            className={`samplePage-tab ${activeTab === tab ? "active" : ""}`}
-            onClick={() => setActiveTab(tab)}
-          >
-            {tab.charAt(0).toUpperCase() + tab.slice(1)}
-          </div>
-        ))}
+      {/* Portfolio tabs section */}
+      <div className="samplePage_tabs">
+        <div
+          className="samplePage_tab samplePage_active"
+          onClick={() => showTab("all")}
+          data-category="all"
+        >
+          All
+        </div>
+        <div
+          className="samplePage_tab"
+          onClick={() => showTab("software")}
+          data-category="software"
+        >
+          Software
+        </div>
+        <div
+          className="samplePage_tab"
+          onClick={() => showTab("apps")}
+          data-category="apps"
+        >
+          Apps
+        </div>
+        <div
+          className="samplePage_tab"
+          onClick={() => showTab("graphics")}
+          data-category="graphics"
+        >
+          Graphics
+        </div>
+        <div
+          className="samplePage_tab"
+          onClick={() => showTab("marketing")}
+          data-category="marketing"
+        >
+          Digital Marketing
+        </div>
       </div>
 
-      {/* Portfolio Grid */}
-      <div className="samplePage-portfolio">
-        {getActiveImages().map((src, index) => (
-          <div key={index} className="samplePage-item">
-            <img
-              src={src}
-              alt={`Portfolio ${index + 1}`}
-              onClick={() => openLightbox(src)}
-            />
-          </div>
-        ))}
+      {/* Portfolio items */}
+      <div id="all" className="samplePage_portfolio samplePage_active">
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio1.jpg" alt="Portfolio 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio2.png" alt="Portfolio 2" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio4.jpg" alt="Software 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio5.jpg" alt="Software 2" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio6.jpg" alt="Apps 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio7.jpg" alt="Apps 2" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio8.jpg" alt="Graphics 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio9.jpg" alt="Graphics 2" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio10.jpg" alt="Marketing 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio12.jpg" alt="Marketing 2" />
+        </div>
+      </div>
+
+      <div id="software" className="samplePage_portfolio">
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio15.jpg" alt="Software 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio14.jpg" alt="Software 2" />
+        </div>
+      </div>
+
+      <div id="apps" className="samplePage_portfolio">
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio15.jpg" alt="Apps 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio17.jpg" alt="Apps 2" />
+        </div>
+      </div>
+
+      <div id="graphics" className="samplePage_portfolio">
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio19.jpg" alt="Graphics 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio20.jpg" alt="Graphics 2" />
+        </div>
+      </div>
+
+      <div id="marketing" className="samplePage_portfolio">
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio4.jpg" alt="Marketing 1" />
+        </div>
+        <div className="samplePage_item">
+          <img src="image/samplePage/portfolio7.jpg" alt="Marketing 2" />
+        </div>
       </div>
 
       {/* Lightbox */}
-      {isLightboxOpen && (
-        <div className="samplePage-lightbox" onClick={closeLightbox}>
-          <span className="samplePage-lightbox-close">×</span>
-          <img src={lightboxSrc} alt="Full Preview" className="samplePage-lightbox-img" />
-        </div>
-      )}
+      <div id="samplePage_lightbox" className="samplePage_lightbox">
+        <span className="samplePage_close-btn" onClick={closeLightbox}>
+          <X size={24} />
+        </span>
+        <img
+          id="samplePage_lightbox-img"
+          src="image/samplePage/portfolio4.jpg"
+          alt="Full Image"
+          className="samplePage_lightbox-img"
+        />
+      </div>
 
-      {/* Why Us Section */}
-      <section className="samplePage-whyus">
-        <div className="samplePage-left">
-          <h6>Weboum – Customized IT Solutions</h6>
-          <div className="samplePage-highlight-line"></div>
-          <h2>Why Choose <strong>us</strong></h2>
-          <p>We Are Trusted Web Development, Web Design & Digital Marketing Company</p>
-          <p>WTPL, (Weboum Technology Pvt. Ltd.) is one of the best digital marketing agencies...</p>
-          <div className="samplePage-feature">
-            <img src="check-icon.png" alt="Check" />
-            <div>
-              <h6>High Customer Retention Rate</h6>
-              <p>We have a 100% retention rate...</p>
+      {/* Why choose us section with form */}
+      <section className="samplePage_section-wrapper container">
+        <div className="row align-items-start">
+          {/* Left Content */}
+          <div className="col-lg-6 samplePage_left-content">
+            <h6>Weboum – Customized IT Solutions</h6>
+            <div className="samplePage_highlight-line"></div>
+            <h2>
+              Why Choose <strong>us</strong>
+            </h2>
+            <p>
+              We Are Trusted Web Development, Web Design & Digital Marketing
+              Company
+            </p>
+            <p>
+              WTPL, (Weboum Technology Pvt. Ltd.) is one of the best digital
+              marketing agencies in Chandigarh & Mohali, India, with the
+              aspiration to create value for your business.
+            </p>
+            <p>
+              Our web design and development with digital marketing services
+              will transform your marketing approach.
+            </p>
+            <p>
+              So, get through one of the best Web development, Web design and
+              Digital marketing companies. WTPL, named as one of the best
+              digital marketing agencies and a great web development service
+              provider.
+            </p>
+
+            {/* Features */}
+            <div className="samplePage_feature">
+              <CheckCircle size={30} />
+              <div>
+                <h6>High Customer Retention Rate</h6>
+                <p>
+                  We have a 100% retention rate. Customer loyalty is priceless.
+                  We are earning our customers loyalty day by day.
+                </p>
+              </div>
+            </div>
+            <div className="samplePage_feature">
+              <CheckCircle size={30} />
+              <div>
+                <h6>Ability To Meet Deadlines</h6>
+                <p>
+                  We are 100% clear on when work needs to be completed.
+                  Deadlines help us achieve shared goals.
+                </p>
+              </div>
+            </div>
+            <div className="samplePage_feature">
+              <CheckCircle size={30} />
+              <div>
+                <h6>Professional Team Member</h6>
+                <p>
+                  We have focused, creative team members passionate about
+                  growing professionally for your business.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Form */}
+          <div className="col-lg-6 mt-4 mt-lg-0">
+            <div className="samplePage_form-box">
+              <img src="image/featured-image.jpg" alt="Featured" />
+              <h5>Request A Free Consultation</h5>
+              <small>
+                We Help Customers Digital Transformation By IT Solutions
+              </small>
+
+              <form>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="tel"
+                  className="form-control"
+                  placeholder="000-000-0000"
+                  required
+                />
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email"
+                  required
+                />
+                <select className="form-select" required>
+                  <option selected>Project Development</option>
+                  <option value="1">Web Development</option>
+                  <option value="2">App Development</option>
+                  <option value="3">Digital Marketing</option>
+                </select>
+                <textarea
+                  className="form-control"
+                  rows="4"
+                  placeholder="Your Query / Message"
+                ></textarea>
+
+                {/* Simulated CAPTCHA box */}
+                <div className="my-3">
+                  <input type="checkbox" id="captcha" />
+                  <label htmlFor="captcha"> I'm not a robot</label>
+                </div>
+
+                <button type="submit" className="btn samplePage_btn-submit">
+                  MAKE A REQUEST
+                </button>
+              </form>
             </div>
           </div>
         </div>
-        <div className="samplePage-form-box">
-          <img src="image/featured-image.jpg" alt="" />
-          <h5>Request A Free Consultation</h5>
-          <small>We Help Customers Digital Transformation By IT Solutions</small>
-          <form>
-            <input type="text" className="samplePage-form-control" placeholder="Name" required />
-            <input type="tel" className="samplePage-form-control" placeholder="000-000-0000" required />
-            <input type="email" className="samplePage-form-control" placeholder="Email" required />
-            <select className="samplePage-form-select" required>
-              <option>Project Development</option>
-              <option>Web Development</option>
-              <option>App Development</option>
-              <option>Digital Marketing</option>
-            </select>
-            <textarea className="samplePage-form-control" rows="4" placeholder="Your Query / Message"></textarea>
-            <div>
-              <input type="checkbox" id="captcha" />
-              <label htmlFor="captcha"> I'm not a robot</label>
-            </div>
-            <button type="submit" className="samplePage-btn-submit">MAKE A REQUEST</button>
-          </form>
+      </section>
+
+      {/* Services section */}
+      <section className="samplePage_services-section">
+        <div className="samplePage_service-box">
+          <Code size={56} className="samplePage_icon-blue" />
+          <h3>App Design & Development</h3>
+          <p>
+            Our team of expert software developers focused on delivering
+            best-in-class, user friendly top-notch applications that perform
+            better across multiple platforms to achieve long term success.
+          </p>
+        </div>
+
+        <div className="samplePage_service-box">
+          <UserCog size={56} className="samplePage_icon-orange" />
+          <h3>On-Demand Developers</h3>
+          <p>
+            Everything under one roof, give you peace of mind. We are happy to
+            hire skilled cum industry experience developers and on-premise IT
+            infrastructure flexibility to accelerate your performance.
+          </p>
+        </div>
+
+        <div className="samplePage_service-box">
+          <Wrench size={56} className="samplePage_icon-green" />
+          <h3>Product Support</h3>
+          <p>
+            Our global strategic partner enables us to create next generation
+            robust products and IT consulting, efficiently and make us quickly
+            technical support solutions for any upcoming complexity.
+          </p>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="samplePage-stats">
-        {["1,500+ Projects", "20+ Team Members", "16+ Years", "100% Satisfaction"].map((text, index) => (
-          <div className="samplePage-stat-box" key={index}>
-            <h2>{text.split(" ")[0]}</h2>
-            <p>{text.split(" ").slice(1).join(" ")}</p>
+      {/* Stats section */}
+      <section className="samplePage_stats-section">
+        <div className="samplePage_stats">
+          <div className="samplePage_stat-box">
+            <h2>1,500+</h2>
+            <p>Project Completed</p>
           </div>
-        ))}
+          <div className="samplePage_stat-box">
+            <h2>20+</h2>
+            <p>Team Members</p>
+          </div>
+          <div className="samplePage_stat-box">
+            <h2>16+</h2>
+            <p>Years in Business</p>
+          </div>
+          <div className="samplePage_stat-box">
+            <h2>100%</h2>
+            <p>Customer Satisfaction</p>
+          </div>
+        </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="samplePage-testimonials">
+      {/* Testimonial section */}
+      <section className="samplePage_testimonial-section">
         <h5>Our Testimonials</h5>
-        <h2>What Clients Say <strong>About Us</strong></h2>
-        <p className="samplePage-subtitle">Our clients are delighted with our services...</p>
-        <div className="samplePage-slider">
-          {[1, 2].map((i) => (
-            <div className="samplePage-testimonial-card" key={i}>
-              <div className="samplePage-testimonial-inner">
-                <div className="samplePage-stars">★★★★★</div>
-                <div className="samplePage-text">This is a client testimonial...</div>
-                <div className="samplePage-author">
-                  <div className="samplePage-author-info">
-                    <img src={`https://i.pravatar.cc/100?img=${10 + i}`} alt="author" />
-                    <strong>Client {i}</strong>
-                  </div>
-                  <div className="samplePage-quote">“</div>
+        <h2>
+          What Clients Say <strong>About Us</strong>
+        </h2>
+        <p className="samplePage_subtitle">
+          Our clients are delighted with our services, and most of them come
+          again to us.
+        </p>
+
+        <div className="samplePage_testimonial-slider" id="testimonialSlider">
+          <div className="samplePage_testimonial-card">
+            <div className="samplePage_testimonial-inner">
+              <div className="samplePage_stars">
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+              </div>
+              <div className="samplePage_testimonial-text">
+                Gurbachan is a seasoned professional that met our deadline and
+                took over an advanced WordPress Project that the original
+                developer could not complete due to a lack of skills. Our
+                project involved a responsive design and full mobile
+                compatibility. He communicates very well in writing and we also
+                had video calls on Skype which sometimes makes things easier. We
+                will work with him again in the future.
+              </div>
+              <div className="samplePage_author">
+                <div className="samplePage_author-info">
+                  <img src="image/contact.jpeg" alt="author" />
+                  <strong>Klaus Holzapfel</strong>
+                </div>
+                <div className="samplePage_quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className="samplePage_testimonial-card">
+            <div className="samplePage_testimonial-inner">
+              <div className="samplePage_stars">
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+                <Star size={26} />
+              </div>
+              <div className="samplePage_testimonial-text">
+                I would highly recommend using Guru for your web design needs.
+                He offers a reliable and affordable service that never
+                compromises quality. He is very knowledgeable, trustworthy, and
+                responds to questions in a timely fashion.
+              </div>
+              <div className="samplePage_author">
+                <div className="samplePage_author-info">
+                  <img src="image/contact.jpeg" alt="author" />
+                  <strong>Jill Cabana</strong>
+                </div>
+                <div className="samplePage_quote">
+                  <Quote size={16} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default ApproachUs;
+export default SamplePage;
