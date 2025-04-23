@@ -6,7 +6,7 @@ import {
   FaFileCode, 
   FaBolt,
   FaLaptop, 
-  FaCodeBranch,
+  FaCodeBranch, 
   FaProjectDiagram, 
   FaCog,
   FaSignInAlt,
@@ -172,7 +172,7 @@ function WebDevelopment() {
       {/* Custom Web Development Solutions Section */}
       <div className="solutions-bg-section">
         <div className="container">
-          <h2 className="section-title">Custom Web Development Solutions</h2>
+          <h2 className="section-title-web">Custom Web Development Solutions</h2>
           <p className="section-subtitle">
             Our Full-Stack Web Developers have the programming expertise and
             industry-specific experience to build, integrate, and customize your
@@ -316,7 +316,7 @@ function WebDevelopment() {
 
       {/* Process Section */}
       <div className="container-process-section">
-        <h2 className="section-title">Our Custom Web Development Process</h2>
+        <h2 className="section-title-web">Our Custom Web Development Process</h2>
         <p className="section-subtitle">
           We meet the demands of your business by executing our strategically
           planned processes for delivering top-of-the-line Custom Websites &

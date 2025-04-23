@@ -72,10 +72,10 @@
 
 /* Sidebar */
 .sidebar {
-  width: 300px;
+  width: 250px;
   background: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -100,7 +100,6 @@
   flex: 1 1 75%;
   padding: 20px;
 }
-
 
 /* Section Titles and Descriptions */
 .section-title {
@@ -131,7 +130,6 @@
   border-radius: 10px;
   padding: 20px;
   height: 100%;
-  
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: top;
@@ -366,12 +364,12 @@ textarea.form-control {
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 0;
-  -ms-overflow-style: none;  /* Hide scrollbar IE and Edge */
-  scrollbar-width: none;  /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
 .testimonial-carousel::-webkit-scrollbar {
-  display: none;  /* Hide scrollbar Chrome, Safari and Opera */
+  display: none; /* Hide scrollbar Chrome, Safari and Opera */
 }
 
 .testimonial-item {
@@ -462,11 +460,11 @@ textarea.form-control {
     flex: 0 0 100%;
     min-height: 250px;
   }
-  
+
   .testimonial-title {
     font-size: 28px;
   }
-  
+
   .testimonial-text {
     font-size: 14px;
   }

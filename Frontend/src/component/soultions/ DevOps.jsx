@@ -92,7 +92,7 @@ const DevOps = () => {
             <div key={i} className="benefit-item">
               <img src={benefit.img} alt={benefit.title} />
               <div>
-                <h3>{benefit.title}</h3>
+                <h3 className="benefit-p">{benefit.title}</h3>
                 <p>{benefit.text}</p>
               </div>
             </div>

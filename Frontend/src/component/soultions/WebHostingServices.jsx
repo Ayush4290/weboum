@@ -88,8 +88,8 @@ const WebHostingServices = () => {
           <p>
             <b>Dedicated Hosting -</b>As the name implies, this type of hosting
             gives you elite rental rights on a particular web server. You can
-            avoid noisy neighbors and have full control over the environment.
-            It is like living in an isolated house since you have full admin
+            avoid noisy neighbors and have full control over the environment. It
+            is like living in an isolated house since you have full admin
             access. It’s your territory and you can do whatever you want to do
             there.
           </p>

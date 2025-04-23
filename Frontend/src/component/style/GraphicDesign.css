@@ -1,36 +1,43 @@
-/* Copy everything from your HTML's <style> tag and paste here */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #222;
-  line-height: 1.6;
+:root {
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --color-bg: #ffffff;
+  --color-dark: #222;
+  --color-light-bg: #f0f7fa;
+  --color-accent: #810082;
+  --color-note-bg: #eaf4f9;
+  --color-shadow: rgba(0, 0, 0, 0.05);
 }
 
-.container {
+.graphicDesign-wrapper {
+  width: 100%;
+}
+
+.graphicDesign-container {
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 20px;
 }
 
-.flex-row {
+.graphicDesign-flex-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
 }
 
-.text-column {
+.graphicDesign-text-column,
+.graphicDesign-text-box {
   flex: 1 1 500px;
 }
 
-.image-column {
+.graphicDesign-image-column,
+.graphicDesign-image-box {
   flex: 1 1 350px;
   text-align: center;
 }
 
-.image-column img {
+.graphicDesign-image-column img,
+.graphicDesign-image-box img {
   max-width: 100%;
   border-radius: 12px;
 }
@@ -50,45 +57,21 @@ p {
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
-  .flex-row {
-    flex-direction: column;
-  }
-
-  .image-column {
-    order: -1;
-  }
-}
-
-.section {
+.graphicDesign-section {
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
-.light-bg {
-  background-color: #f0f7fa;
+.graphicDesign-light-bg {
+  background-color: var(--color-light-bg);
 }
 
-.flex {
+.graphicDesign-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
-}
-
-.text-box {
-  flex: 1 1 400px;
-}
-
-.image-box {
-  flex: 1 1 400px;
-  text-align: center;
-}
-
-.image-box img {
-  max-width: 100%;
-  border-radius: 16px;
 }
 
 ul {
@@ -100,7 +83,7 @@ li {
   margin-bottom: 10px;
 }
 
-.services-wrapper {
+.graphicDesign-services-wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -108,77 +91,71 @@ li {
   padding: 0 20px;
 }
 
-.services-row {
+.graphicDesign-services-row {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.service-item {
+.graphicDesign-service-item {
   flex: 1 1 45%;
   text-align: center;
   min-width: 280px;
 }
 
-.service-item h4 {
+.graphicDesign-service-item h4 {
   font-size: 20px;
-  color: #810082;
+  color: var(--color-accent);
   margin-bottom: 12px;
 }
 
-.service-item p {
+.graphicDesign-service-item p {
   font-size: 16px;
   line-height: 1.6;
 }
 
-.quality-results {
-  background-color: #eaf4f9;
+.graphicDesign-quality-results {
+  background-color: var(--color-note-bg);
   padding: 60px 20px;
   text-align: center;
 }
 
-.quality-results h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.results-grid {
+.graphicDesign-results-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.result-card {
+.graphicDesign-result-card {
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px var(--color-shadow);
   flex: 1 1 300px;
   max-width: 350px;
 }
 
-.icon {
+.graphicDesign-icon {
   font-size: 30px;
-  color: #810082;
+  color: var(--color-accent);
   margin-bottom: 16px;
 }
 
-.result-card h3 {
-  color: #810082;
+.graphicDesign-result-card h3 {
+  color: var(--color-accent);
   font-size: 20px;
   margin-bottom: 12px;
 }
 
-.result-card p {
+.graphicDesign-result-card p {
   font-size: 16px;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
-.bottom-note {
+.graphicDesign-bottom-note {
   margin-top: 40px;
   font-size: 15px;
   max-width: 800px;
@@ -186,12 +163,18 @@ li {
   margin-right: auto;
 }
 
+.graphicDesign-center {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
-  .flex {
+  .graphicDesign-flex-row,
+  .graphicDesign-flex {
     flex-direction: column;
   }
 
-  .image-box {
+  .graphicDesign-image-column,
+  .graphicDesign-image-box {
     order: -1;
   }
 }
