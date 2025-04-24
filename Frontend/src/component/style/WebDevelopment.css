@@ -1,18 +1,19 @@
-/* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 .web-development {
   width: 100%;
 }
 
-.container {
+.web-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+.web-container em {
+  font-size: 1.3rem;
+}
 
-/* Feature Cards Section */
 .feature-bg-section {
   background-color: #e9f0f5;
   padding: 40px 0;
@@ -58,6 +59,11 @@
   line-height: 1.7;
   margin: 0;
 }
+.icons {
+  color: #800080;
+  width: 200px;
+  height: 50px;
+}
 
 /* Features Section */
 .features-section {
@@ -69,7 +75,7 @@
   margin: 0 auto 3rem auto;
   text-align: center;
   font-size: 1.1rem;
-  color: #444;
+  color: #201b1b;
 }
 
 .features-row {
@@ -90,7 +96,8 @@
 }
 
 .feature-icon {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  margin-bottom: 10px;
   color: #800080;
   flex-shrink: 0;
 }
@@ -113,8 +120,12 @@
   background-color: #e9f0f5;
   padding: 60px 0;
 }
+.container-process-section {
+  background-color: white;
+  padding: 20px;
+}
 
-.section-title {
+.section-title-web {
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.5rem;
@@ -126,7 +137,7 @@
   text-align: center;
   max-width: 900px;
   margin: 0 auto 2.5rem auto;
-  color: #666;
+  color: #392929;
   font-size: 1rem;
 }
 
@@ -134,38 +145,43 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+  justify-content: center;
 }
 
 .solution-card-wrapper {
-  width: 33.333%;
-  padding: 0 15px;
-  margin-bottom: 30px;
+  width: 150%;
+  max-width: 360px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .solution-card {
   background: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 25px 20px;
   height: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  transition: 0.3s;
   text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
 .solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #800080;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
-  font-weight: 600;
+  font-weight: 700;
   color: #3b3b98;
   font-size: 1.1rem;
   margin-bottom: 10px;
@@ -174,6 +190,7 @@
 .card-text {
   font-size: 0.95rem;
   color: #444;
+  line-height: 1.5;
 }
 
 /* Process Section */
@@ -236,7 +253,7 @@
 
 .tech-section .lead {
   font-size: 1rem;
-  color: #555;
+  color: #100d0d;
   max-width: 800px;
   margin: 0 auto 20px auto;
 }
@@ -256,8 +273,11 @@
 }
 
 .tech-logo {
+  display: block;
+  margin: 0 auto;
   height: 60px;
-  object-fit: contain;
+  width: 60px;
+  padding-right: 0;
 }
 
 .tech-title {
@@ -270,7 +290,7 @@
 
 .tech-description {
   font-size: 0.95rem;
-  color: #444;
+  color: #1b1717;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -315,5 +335,3 @@
     width: 100%;
   }
 }
-
-

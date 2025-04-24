@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #6a005f;
+  --text-color: #333;
+  --heading-color: #111;
+  --spacing: 1.9rem;
+  --radius: 0.5rem;
+}
+
+.page {
+  padding: var(--spacing);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: var(--spacing);
+  color: var(--primary-color);
+}
+
+.section-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+@media (min-width: 768px) {
+  .section-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.section-text {
+  flex: 1;
+}
+
+.section-image {
+  flex: 1;
+}
+
+.section-image img {
+  border-radius: var(--radius);
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.center {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.Devops-title {
+  color: rgb(65, 35, 147);
+}
+.benefits {
+  margin-bottom: var(--spacing);
+}
+
+.benefits-grid {
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefit-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+
+.call-to-action {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: var(--spacing);
+}
+.call-to-action-text {
+  font-size: 1.5rem;
+
+  text-align: center;
+  margin-top: var(--spacing);
+}
+
+/* Additional styles for better layout and spacing */
+.benefit-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.benefit-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(92, 40, 175);
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.call-to-action a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action a:hover {
+  background-color: #5a0050;
+}

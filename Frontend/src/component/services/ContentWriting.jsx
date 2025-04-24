@@ -1,10 +1,12 @@
 import React from "react";
 import "../style/ContentWriting.css";
+import Sub_Header from "../Sub_Header";
+import Days from "../about-us/Days";
 
 const ContentWriting = () => {
   return (
     <>
-      {/* Section 1 */}
+     <Sub_Header title="Content Writing" />
       <section className="section">
         <div className="container">
           <div className="custom-row">
@@ -120,6 +122,7 @@ const ContentWriting = () => {
           </div>
         </div>
       </section>
+      <Days/>
     </>
   );
 };

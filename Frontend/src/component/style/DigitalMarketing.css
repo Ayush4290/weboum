@@ -1,21 +1,33 @@
-.marketing-agency {
+/* Base styles */
+.DigitalMarketing {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Marketing Agency Section */
+.DigitalMarketing-agency {
   padding: 60px 20px;
   text-align: center;
 }
 
-.marketing-agency h2 {
+.DigitalMarketing-agency h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.marketing-agency > p {
+.DigitalMarketing-agency > p {
   max-width: 900px;
   margin: 0 auto 15px;
   font-size: 17px;
 }
 
-.marketing-content {
+.DigitalMarketing-content {
   background-color: #eaf4f9;
   margin-top: 40px;
   padding: 40px 30px;
@@ -27,45 +39,35 @@
   justify-content: center;
 }
 
-.image-container {
+.DigitalMarketing-image-container {
   flex: 1 1 350px;
   max-width: 500px;
 }
 
-.image-container img {
+.DigitalMarketing-image-container img {
   width: 100%;
   border-radius: 20px;
 }
 
-.text-content {
+.DigitalMarketing-text-content {
   flex: 1 1 350px;
   max-width: 600px;
   text-align: left;
 }
 
-.text-content h3 {
+.DigitalMarketing-text-content h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.text-content p {
+.DigitalMarketing-text-content p {
   font-size: 16px;
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .marketing-content {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .text-content {
-    text-align: center;
-  }
-}
-
-.sociable-section {
+/* Sociable Section */
+.DigitalMarketing-sociable-section {
   display: flex;
   flex-wrap: wrap;
   padding: 60px 20px;
@@ -75,68 +77,58 @@
   margin: auto;
 }
 
-.sociable-text {
+.DigitalMarketing-sociable-text {
   flex: 1 1 500px;
   padding: 20px;
 }
 
-.sociable-text h2 {
+.DigitalMarketing-sociable-text h2 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.sociable-text p {
+.DigitalMarketing-sociable-text p {
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 15px;
   color: #444;
 }
 
-.sociable-image {
+.DigitalMarketing-sociable-image {
   flex: 1 1 500px;
   padding: 20px;
   text-align: center;
 }
 
-.sociable-image img {
+.DigitalMarketing-sociable-image img {
   width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .sociable-section {
-    flex-direction: column-reverse;
-    padding: 40px 20px;
-  }
-
-  .sociable-text {
-    text-align: center;
-  }
-}
-
-.social-benefits-section {
+/* Social Benefits Section */
+.DigitalMarketing-social-benefits-section {
   padding: 60px 20px;
   background-color: #f5fafd;
   text-align: center;
 }
 
-.social-benefits-section .section-title {
+.DigitalMarketing-section-title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.social-benefits-section .section-subtitle {
+.DigitalMarketing-section-subtitle {
   font-size: 16px;
   color: #333;
   max-width: 800px;
   margin: 0 auto 40px;
 }
 
-.benefits-grid {
+.DigitalMarketing-benefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -145,13 +137,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.benefit-box {
+.DigitalMarketing-benefit-box {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -159,109 +145,208 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.benefit-box:hover {
+.DigitalMarketing-benefit-box:hover {
   transform: translateY(-5px);
 }
 
-.benefit-box .icon i {
-  color: #800080;
-  font-size: 40px;
+.DigitalMarketing-icon {
   margin-bottom: 10px;
 }
 
-.benefit-box h3 {
+.DigitalMarketing-benefit-box h3 {
   font-size: 18px;
   color: #990066;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
-.benefit-box p {
+.DigitalMarketing-benefit-box p {
   font-size: 14px;
   color: #333;
   line-height: 1.6;
 }
 
-.brand-voice-section {
-  padding: 60px 20px;
-  background-color: #f3f6fb;
-  text-align: center;
-}
-
-.brand-voice-section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.brand-voice-section .content-box {
-  background: white;
-  padding: 25px;
-  margin: 0 auto 30px;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
-
-.why-work-section {
+/* Brand Voice Section */
+.DigitalMarketing-brand-voice-section {
+  background-color: #f8f8f8;
   padding: 40px 20px;
+}
+
+.DigitalMarketing-brand-voice-container {
+  max-width: 1024px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.why-work-section h3 {
+.DigitalMarketing-brand-voice-container h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 24px;
 }
 
-.why-work-section ul {
-  list-style: none;
-  padding: 0;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.why-work-section li {
-  position: relative;
-  padding: 10px 20px 10px 40px;
-  margin: 10px 0;
+.DigitalMarketing-brand-voice-content {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: left;
-  border-bottom: 2px solid #a200a2;
+  color: #444;
+  margin-bottom: 40px;
 }
 
-.why-work-section li::before {
-  content: "\2714";
-  color: blue;
-  position: absolute;
-  left: 10px;
-  font-size: 18px;
-  top: 10px;
+.DigitalMarketing-brand-voice-content p {
+  margin-bottom: 16px;
 }
 
-.cta-section {
-  padding: 50px 20px;
-  text-align: center;
-  background: #f9f9f9;
+.DigitalMarketing-why-work {
+  text-align: left;
+  margin-top: 40px;
 }
 
-.cta-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  margin: 0 auto 30px;
-  font-size: 16px;
+.DigitalMarketing-why-work h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
   color: #333;
 }
 
-.cta-text {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
+.DigitalMarketing-why-work ul {
+  list-style: none;
+  padding: 0;
 }
 
+.DigitalMarketing-why-work li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #800080;
+}
 
+.DigitalMarketing-why-work i,
+.DigitalMarketing-why-work svg {
+  color: #0066cc;
+  margin-top: 4px;
+  min-width: 16px;
+}
 
+.DigitalMarketing-contact-note {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+}
 
+.DigitalMarketing-cta {
+  margin-top: 24px;
+  text-align: center;
+}
 
+.DigitalMarketing-cta p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.DigitalMarketing-cta a {
+  display: inline-block;
+  background-color: #800080;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.DigitalMarketing-cta a:hover {
+  background-color: #660066;
+}
+
+/* Connect Section */
+.DigitalMarketing-connect-section {
+  background-color: #430243;
+  color: white;
+  padding: 40px 24px;
+}
+
+.DigitalMarketing-connect-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  text-align: center;
+}
+
+.DigitalMarketing-connect-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.DigitalMarketing-connect-container p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.DigitalMarketing-connect-container a {
+  background-color: #0066cc;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.DigitalMarketing-connect-container a:hover {
+  background-color: #0055aa;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .DigitalMarketing-content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .DigitalMarketing-text-content {
+    text-align: center;
+  }
+
+  .DigitalMarketing-sociable-section {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+  }
+
+  .DigitalMarketing-sociable-text {
+    text-align: center;
+  }
+
+  .DigitalMarketing-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .DigitalMarketing-connect-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .DigitalMarketing-connect-container {
+    flex-direction: row;
+    text-align: left;
+  }
+}

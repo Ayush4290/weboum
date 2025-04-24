@@ -1,0 +1,122 @@
+:root {
+  --main-font: "Segoe UI", sans-serif;
+  --bg-color: #e0e7ea;
+  --white: #fff;
+  --dark: #191919;
+  --accent: #007bff;
+  --hover: #0056b3;
+  --outline: #ffffffaa;
+}
+
+.sample-wrapper {
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.sample-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  padding: 40px;
+  color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.sample-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sample-text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sample-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.sample-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.sample-btn-primary,
+.sample-btn-outline {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sample-btn-primary {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.sample-btn-primary:hover {
+  background: var(--hover);
+}
+
+.sample-btn-outline {
+  border: 1px solid var(--outline);
+  color: var(--white);
+  background: transparent;
+}
+
+.sample-btn-outline:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.sample-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sample-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Tabs */
+.sample-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sample-tab {
+  padding: 8px 16px;
+  border: none;
+  background: var(--white);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.sample-tab.active {
+  background: var(--dark);
+  color: var(--white);
+}
+
+/* Gallery */
+.sample-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.sample-thumb {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,8 +1,12 @@
 import React from "react";
 import "../style/webDesign.css";
+import Sub_Header from "../Sub_Header";
+import Days from "../about-us/Days";
 
 const WebsiteDesign = () => {
   return (
+    <>
+    <Sub_Header title="Web Designing" />
     <section className="design-section py-5">
       <div className="container">
         {/* First Block */}
@@ -73,6 +77,9 @@ const WebsiteDesign = () => {
         </ul>
       </div>
     </section>
+    <Days />
+    </>
+   
   );
 };
 

@@ -1,93 +1,94 @@
 :root {
-    --primary-font: 'Segoe UI', sans-serif;
-    --background-color: #fff;
-    --text-color: #333;
-    --primary-color: #87005a;
-    --primary-color-hover: #6c0048;
-    --form-label-color: #555;
-    --form-bg-color: #f8f9fa;
-    --form-border-color: #ced4da;
-  }
-  
+  --primary-font: 'Segoe UI', sans-serif;
+  --background-color: #fff;
+  --text-color: #333;
+  --primary-color: #87005a;
+  --primary-color-hover: #6c0048;
+  --form-label-color: #555;
+  --form-bg-color: #f8f9fa;
+  --form-border-color: #ced4da;
+}
 
-  .abbreviation b {
-    display: block;
-    margin-top: 20px;
-  }
-  
-  .abbreviation i {
-    font-weight: bold;
-  }
-  
-  .row {
-    padding-left: 0;
-  }
-  
-  .support-text {
-    padding-left: 30px;
-  }
-  
-  /* 30 Days Support Section */
-  .offer-section {
-    padding: 60px 20px;
-    background: url('image/background.jpeg'); 
-    width: 100%;
-    background-size: cover;
-  }
-  
-  .highlight-line {
-    border-top: 3px solid #b300b3;
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .support-text h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .support-text h3 {
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .support-text ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .support-text ul li::before {
-    content: "✔️ ";
-    margin-right: 5px;
-  }
-  
-  .quote-btn {
-    background-color: #0056d2;
-    color: white;
-    padding: 12px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-  }
-  
-  .quote-btn:hover {
-    background-color: #0042a7;
-    color: white;
-  }
-  
-  .content-section {
-    padding: 20px;
-  }
-  
-  .missionrow {
-    padding-top: 20px;
-  }
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
+.about-abbreviation b {
+  display: block;
+  margin-top: 20px;
+}
+
+.about-abbreviation i {
+  font-weight: bold;
+}
+
+.row {
+  padding-left: 0;
+}
+
+.support-text {
+  padding-left: 30px;
+}
+
+/* 30 Days Support Section */
+.offer-section {
+  padding: 60px 20px;
+  background: url('image/background.jpeg');
+  width: 100%;
+  background-size: cover;
+}
+
+.highlight-line {
+  border-top: 3px solid #b300b3;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.support-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.support-text h3 {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.support-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.support-text ul li::before {
+  content: "✔️ ";
+  margin-right: 5px;
+}
+
+.quote-btn {
+  background-color: #0056d2;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.quote-btn:hover {
+  background-color: #0042a7;
+  color: white;
+}
+
+.about-content-section {
+  padding: 20px;
+}
+
+.about-missionrow {
+  padding-top: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}

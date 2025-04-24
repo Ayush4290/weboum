@@ -1,11 +1,20 @@
 import React from "react";
 import "../style/ContactUs.css";
 
-// Importing icons from react-icons
-import { FaFacebookF, FaTimes, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTimes,
+  FaYoutube,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+import Sub_Header from "../Sub_Header";
+import Days from "./Days";
 
 const Contact = () => {
   return (
+   <>
+   <Sub_Header title="Contact Us" />
     <section className="approach-section">
       <div className="approach-row">
         {/* Left Section */}
@@ -17,11 +26,21 @@ const Contact = () => {
             We’ll Be Happy To Assist!
           </h2>
           <div className="approach-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTimes /></a>
-            <a href="#"><FaYoutube /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaTimes />
+            </a>
+            <a href="#">
+              <FaYoutube />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
 
@@ -53,6 +72,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    <Days/>
+   </>
   );
 };
 

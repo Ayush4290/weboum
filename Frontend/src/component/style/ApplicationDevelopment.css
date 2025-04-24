@@ -1,5 +1,5 @@
 :root {
-  --primary-font: 'Poppins', sans-serif;
+  --primary-font: "Poppins", sans-serif;
   --background-color: #f8f9fa;
   --text-color: #333;
   --section-bg-even: #eef7f9;
@@ -8,81 +8,89 @@
   --heading-font-weight: 600;
   --heading-margin-bottom: 20px;
   --paragraph-line-height: 1.8;
+  --max-width: 1200px;
 }
 
-
-
-.section {
+.Application-section {
   padding: var(--section-padding);
+  display: flex;
+  justify-content: center;
 }
 
-.section:nth-child(even) {
-  background-color: var(--section-bg-even);
-}
-
-.section-content {
+.Application-section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.section-content .section-image {
+.Application-section-content .Application-section-image {
   width: 100%;
   max-width: 500px;
   margin-bottom: 20px;
 }
 
-.section-content .section-image img {
+.Application-section-content .Application-section-image img {
   width: 100%;
+  height: auto;
   border-radius: var(--image-border-radius);
+  object-fit: cover;
 }
 
-.section-content .section-text {
+.Application-section-content .Application-section-text {
   width: 100%;
   max-width: 500px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.section-content .section-text h4 {
+.Application-section-content .Application-section-text h4 {
   font-weight: var(--heading-font-weight);
   margin-bottom: var(--heading-margin-bottom);
+  font-size: 24px;
 }
 
-.section-content .section-text p {
+.Application-section-content .Application-section-text p {
   line-height: var(--paragraph-line-height);
-  font-weight: 700px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 /* Responsive Design */
 @media (min-width: 768px) {
-  .section-content {
+  .Application-section-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .section-content .section-image {
+  .Application-section-content .Application-section-image {
     margin-bottom: 0;
   }
 
-  .section-content .section-text {
+  .Application-section-content .Application-section-text {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 90px;
   }
 
-  .order-1 {
+  .Application-order-1 {
     order: 1;
   }
 
-  .order-2 {
+  .Application-order-2 {
     order: 2;
   }
 
-  .order-md-1 {
+  .Application-order-md-1 {
     order: 1;
   }
 
-  .order-md-2 {
+  .Application-order-md-2 {
     order: 2;
   }
 }
