@@ -9,7 +9,7 @@
   padding: 6rem 1rem;
   max-width: 1800px;
   margin: 0 auto;
-  background: linear-gradient(to right, #85005f, #281d2a);
+  background: linear-gradient(to right, #85005f, #4a0457);
 }
 
 .hero-section h1 {
@@ -17,15 +17,17 @@
   margin-bottom: 2rem;
   font-weight: 700;
   line-height: 1.2;
+  color: white;
 }
 
 .cta-buttons {
   display: inline-block;
   background-color: white;
-  color: rgb(168, 22, 22);
+  color: rgb(103, 36, 36);
   padding: 0.75rem 2rem;
   border-radius: 30px;
   text-decoration: none;
+  font-size: 1.2rem;
   font-weight: 1000;
   transition: background 0.3s, transform 0.2s;
 }
@@ -335,6 +337,7 @@
   max-width: 500px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   margin-left: auto;
+  float: right;
 }
 
 .form-heading {
@@ -416,12 +419,12 @@ textarea.form-control {
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 0;
-  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
 
 .testimonial-carousel::-webkit-scrollbar {
-  display: none; /* Hide scrollbar Chrome, Safari and Opera */
+  display: none;
 }
 
 .testimonial-item {

@@ -74,30 +74,7 @@ const WhyUs = () => {
         </div>
       </section>
 
-      <section className="whyus-offer-section">
-        <div className="whyus-offer-content">
-          <div className="whyus-support-text">
-            <h6>Custom Software Development & Enterprises Solutions</h6>
-            <div className="whyus-highlight-line"></div>
-            <h2>30-Days FREE Support</h2>
-            <h3>100% Satisfaction Guaranteed</h3>
-            <hr />
-            <p>
-              Since 2012, we deliver 100% project success, with unique products and development strategies that drive business success.
-            </p>
-            <ul>
-              <li><strong>24/7 Support:</strong> Email, Call, or Skype</li>
-              <li>Dedicated Team</li>
-              <li>Exceptional Consultation</li>
-              <li>Trusted by Global Companies</li>
-            </ul>
-            <a href="/request-a-quote" className="whyus-quote-btn">Request A FREE Quote ➜</a>
-          </div>
-          <div className="whyus-image-container">
-            <img src="image/android-app.jpg" alt="Android App Illustration" />
-          </div>
-        </div>
-      </section>
+      
       <Days/>
     </>
   );
