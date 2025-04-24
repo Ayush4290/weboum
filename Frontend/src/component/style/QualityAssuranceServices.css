@@ -1,0 +1,222 @@
+:root {
+    --primary-font: 'Segoe UI', sans-serif;
+    --background-color: #fff;
+    --text-color: #333;
+    --primary-color: #87005a;
+    --primary-color-hover: #6c0048;
+    --secondary-color: #b300b3;
+    --light-bg-color: #f8f9fa;
+    --form-label-color: #555;
+    --form-bg-color: #f8f9fa;
+    --form-border-color: #ced4da;
+  }
+  
+  /* QA Services header specific styling */
+  #qa-services-page .sub-header-title,
+  #qa-services-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    position: relative;
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  #qa-services-page .sub-header-title::after,
+  #qa-services-page h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+  }
+  
+  /* General Styles */
+  .content-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .rounded-image {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Services Section */
+  .services-section {
+    background-color: var(--light-bg-color);
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(135, 0, 90, 0.1);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .service-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  /* QA Process Section */
+  .qa-process-section {
+    background-color: white;
+  }
+  
+  .process-card {
+    background-color: var(--light-bg-color);
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+    position: relative;
+    padding-left: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .process-number {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .process-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-section {
+    background-color: var(--light-bg-color);
+  }
+  
+  .check-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .check-list li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .cta-btn {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    color: var(--primary-color);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .service-card, .process-card {
+      margin-bottom: 20px;
+    }
+    
+    #qa-services-page .sub-header-title,
+    #qa-services-page h1 {
+      font-size: 2rem;
+      margin-left: 20px;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .cta-section h2 {
+      font-size: 1.8rem;
+    }
+  }

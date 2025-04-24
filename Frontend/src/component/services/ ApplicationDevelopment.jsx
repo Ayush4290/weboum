@@ -1,8 +1,12 @@
 import React from "react";
 import "../style/ApplicationDevelopment.css";
+import Sub_Header from "../Sub_Header";
+import Days from "../about-us/Days";
 
 const AppSections = () => {
   return (
+    <>
+    <Sub_Header title="Application Development" />
     <div>
       <div className="Application-section">
         <div className="Application-section-content">
@@ -104,6 +108,8 @@ const AppSections = () => {
         </div>
       </div>
     </div>
+  <Days/>
+    </>
   );
 };
 

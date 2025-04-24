@@ -11,8 +11,6 @@
   --max-width: 1200px;
 }
 
-
-
 .Application-section {
   padding: var(--section-padding);
   display: flex;
@@ -57,7 +55,7 @@
 
 .Application-section-content .Application-section-text p {
   line-height: var(--paragraph-line-height);
-  font-weight: 400; 
+  font-weight: 400;
   margin-bottom: 30px;
   font-size: 16px;
 }

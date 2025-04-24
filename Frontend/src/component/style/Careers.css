@@ -1,49 +1,49 @@
-.application-section {
+.careers-application-section {
   padding: 60px 20px;
   background-color: #fff;
 }
 
-.container {
+.careers-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.row {
+.careers-row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
 
-.col-lg-7,
-.col-lg-5 {
+.careers-col-lg-7,
+.careers-col-lg-5 {
   padding: 0 15px;
   box-sizing: border-box;
 }
 
-.col-lg-7 {
+.careers-col-lg-7 {
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
 }
 
-.col-lg-5 {
+.careers-col-lg-5 {
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
-.col-md-6 {
+.careers-col-md-6 {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
-.application-form {
+.careers-application-form {
   padding: 30px;
   background-color: #f9f9f9;
   border-radius: 6px;
 }
 
-.form-control {
+.careers-form-control {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -52,13 +52,13 @@
   box-sizing: border-box;
 }
 
-.form-label {
+.careers-form-label {
   font-weight: 600;
   margin-bottom: 5px;
   display: block;
 }
 
-.btn-submit {
+.careers-btn-submit {
   background-color: #87005a;
   color: white;
   font-weight: bold;
@@ -69,35 +69,35 @@
   cursor: pointer;
 }
 
-.btn-submit:hover {
+.careers-btn-submit:hover {
   background-color: #6c0048;
 }
 
-.captcha-box {
+.careers-captcha-box {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.captcha-image {
+.careers-captcha-image {
   height: 40px;
 }
 
-.form-image img {
+.careers-form-image img {
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  .col-lg-7,
-  .col-lg-5 {
+  .careers-col-lg-7,
+  .careers-col-lg-5 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .application-form {
+  .careers-application-form {
     padding: 20px;
   }
 }

@@ -7,7 +7,7 @@
   --max-width: 1200px;
 }
 
-.page {
+.shopify-page {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.container {
+.shopify-container {
   max-width: var(--max-width);
   margin: auto;
   padding: var(--spacing);
@@ -24,54 +24,56 @@
   gap: var(--spacing);
 }
 
-.row {
+.shopify-row {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  gap: var(--spacing);
 }
 
-.image-section {
+.shopify-image-section {
   flex: 1 1 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image-section img {
+.shopify-image-section img {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius);
 }
 
-.text-section {
+.shopify-text-section {
   flex: 1 1 500px;
   padding: 0 1rem;
 }
 
-.text-section h1,
-.container h1 {
+.shopify-text-section h1,
+.shopify-container h1 {
   font-size: 1.75rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
   padding-top: 6rem;
 }
 
-.text-section p,
-.container p {
+.shopify-text-section p,
+.shopify-container p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.container h2 {
+.shopify-container h2 {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-top: 1rem;
   margin-bottom: 0.75rem;
 }
 
-.container h3 {
+.shopify-container h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -79,18 +81,81 @@
   margin-bottom: 0.5rem;
 }
 
-.container ul {
+.shopify-container ul {
   padding-left: 1.5rem;
   list-style-type: disc;
   margin-top: 0.5rem;
 }
 
-.container ul li {
+.shopify-container ul li {
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
   line-height: 1.5;
 }
 
-.pt-24 {
+.shopify-pt-24 {
   padding-top: 100px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .shopify-text-section h1,
+  .shopify-container h1 {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .shopify-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .shopify-container h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopify-row {
+    flex-direction: column;
+  }
+
+  .shopify-image-section,
+  .shopify-text-section {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .shopify-text-section h1,
+  .shopify-container h1 {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .shopify-text-section p,
+  .shopify-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopify-container {
+    padding: 1rem;
+  }
+
+  .shopify-text-section h1,
+  .shopify-container h1 {
+    font-size: 1.25rem;
+  }
+
+  .shopify-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .shopify-container h3 {
+    font-size: 1rem;
+  }
+
+  .shopify-container ul li {
+    font-size: 1rem;
+  }
 }

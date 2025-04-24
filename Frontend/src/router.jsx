@@ -24,6 +24,9 @@ import ProductLifecycleManagement from "./component/soultions/ProductLifecycleMa
 import QualityAssuranceServices from "./component/soultions/QualityAssuranceServices";
 import ShopifyDevelopment from "./component/soultions/ShopifyDevelopment";
 import WebHostingServices from "./component/soultions/WebHostingServices";
+import All_Logos from "./component/All_Logos";
+import HireDeveloper from "./component/HireDeveloper";
+import Days from "./component/about-us/Days";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +69,9 @@ const router = createBrowserRouter([
       { path: "/shopify-developer", element: <ShopifyDevelopment /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/request-a-quote", element: <RequestAQuote /> },
+      { path: "/all-logos", element: <All_Logos /> },
+      {path:"/hire-developer", element:<HireDeveloper/>},
+      {path:"/days",element:<Days/>}
     ],
   },
 ]);

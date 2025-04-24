@@ -1,8 +1,12 @@
 import React from "react";
 import "../style/AboutUs.css";
+import Sub_Header from "../Sub_Header";
+import Days from "./Days";
 
 const AboutUs = () => {
   return (
+   <>
+   <Sub_Header title="About Us" />
     <div>
       <div className="container mt-5">
         <div className="row align-items-center content-section">
@@ -187,6 +191,8 @@ const AboutUs = () => {
         </div>
       </section>
     </div>
+    <Days/>
+   </>
   );
 };
 

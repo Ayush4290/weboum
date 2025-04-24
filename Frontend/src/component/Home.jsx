@@ -149,20 +149,26 @@ const HeroSection = () => {
 
   return (
     <>
+      <div className="hero-section">
+        <h1>Unlock unlimited growth with premium custom development</h1>
+        <a href="/" className="cta-buttons">
+          Start Building Today!
+        </a>
+      </div>
       {/* our services  */}
       <div>
-        <section className="services-section">
+        <section id="services" className="services-section">
           <div className="container">
             <div className="row">
               {/* Sidebar */}
               <div className="col-sidebar-col">
                 <div className="sidebar">
-                  <a href="#">Our Services</a>
-                  <a href="#">Our Portfolio</a>
-                  <a href="#">Why Choose Us</a>
-                  <a href="#">Process We Follow</a>
-                  <a href="#">Contact Us</a>
-                  <a href="#">Our Testimonial</a>
+                  <a href="#services">Our Services</a>
+                  <a href="#portfolio">Our Portfolio</a>
+                  <a href="#why-choose-us">Why Choose Us</a>
+                  <a href="#process">Process We Follow</a>
+                  <a href="#contact">Contact Us</a>
+                  <a href="#testimonials">Our Testimonial</a>
                 </div>
               </div>
 
@@ -193,7 +199,7 @@ const HeroSection = () => {
                   ))}
                 </div>
 
-                <div className="portfolio-section">
+                <div id="portfolio" className="portfolio-section">
                   <h2 className="section-title">OUR PORTFOLIO</h2>
                 </div>
               </div>
@@ -203,7 +209,7 @@ const HeroSection = () => {
       </div>
 
       {/* our portfolio */}
-      <section className="why-choose-section">
+      <section id="why-choose-us" className="why-choose-section">
         <div className="why-container">
           <h2 className="why-title">WHY CHOOSE US</h2>
           <h5 className="why-subtitle">
@@ -232,7 +238,7 @@ const HeroSection = () => {
 
       {/* Process We Follow */}
       <div>
-        <section className="process-section">
+        <section id="process" className="process-section">
           <div className="process-container">
             <h2 className="process-heading">Process We Follow</h2>
             <p className="process-description">
@@ -253,6 +259,7 @@ const HeroSection = () => {
       {/* Talk to our Experts about your Project Today! */}
       <div>
         <section
+          id="contact"
           className="contact-section"
           style={{ backgroundImage: "url('image/contact.jpeg')" }}
         >
@@ -310,7 +317,7 @@ const HeroSection = () => {
       </div>
 
       {/* OUR TESTIMONIALS */}
-      <section className="testimonial-section">
+      <section id="testimonials" className="testimonial-section">
         <div className="container">
           <h2 className="testimonial-title">OUR TESTIMONIALS</h2>
 

@@ -1,60 +1,97 @@
 import React from "react";
 import "./style/Footer.css";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div className="footer-inner">
-        <div className="footer-section">
+      <div className="footer-content">
+        <div className="footer-company-info">
           <div className="footer-logo">
             <img src="/image/logo-1.png" alt="Weboum Logo" />
+            <span className="logo-text">empower your Growth</span>
           </div>
-          <div className="footer-description">
+          <p className="company-description">
             Weboum empowers small businesses and startups with high-impact
             digital solutions—stunning websites, powerful apps, and strategic
             marketing—to boost visibility, attract customers, and drive real
             growth!
-          </div>
+          </p>
         </div>
 
-        <div className="footer-section">
-          <h4 className="top-part">Links</h4>
-          <div className="footer-links">
-            <a href="/">Home</a>
-            <a href="/about-us">About Us</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/careers">Careers</a>
-            <a href="/contact">Contact</a>
-            <a href="/request-a-quote">Hire Developer</a>
-            <a href="/request-a-quote">Request a quote</a>
-          </div>
+        <div className="footer-links-section">
+          <h3>Links</h3>
+          <div className="underline"></div>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about-us">About Us</a>
+            </li>
+            <li>
+              <a href="/portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="/careers">Careers</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/hire-developer">Hire Developer</a>
+            </li>
+            <li>
+              <a  href="/request-a-quote">
+                Request a quote
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div className="footer-section">
-          <h4 className="top-part">Services</h4>
-          <div className="footer-services">
-            <a href="/application-developer">Application Development</a>
-            <a href="/web-designing">Web Designing</a>
-            <a href="/web-developer">Web Development</a>
-            <a href="/digital-marketing-3">Digital Marketing</a>
-            <a href="/graphic-design">Graphic Design</a>
-            <a href="/content-writing">Content Writing</a>
-            <a href="/logo-designs">All Logos Designs</a>
-          </div>
+        <div className="footer-services-section">
+          <h3>Services</h3>
+          <div className="underline"></div>
+          <ul>
+            <li>
+              <Link to="/application-developer">Application Development</Link>
+            </li>
+            <li>
+              <Link to="/web-designing">Web Designing</Link>
+            </li>
+            <li>
+              <Link to="/web-developer">Web Development</Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing">Digital Marketing</Link>
+            </li>
+            <li>
+              <Link to="/graphic-design">Graphic Design</Link>
+            </li>
+            <li>
+              <Link to="/content-writing">Content Writing</Link>
+            </li>
+            <li>
+              <Link to="/all-logos">All Logos Designs</Link>
+            </li>
+          </ul>
         </div>
 
-        <div className="footer-section">
-          <h4 className="top-part">Subscribe Newsletter</h4>
-          <div className="footer-newsletter">
+        <div className="footer-newsletter-section">
+          <h3>Subscribe Newsletter</h3>
+          <div className="newsletter-form">
             <input type="email" placeholder="Email Address" />
-            <button>SUBMIT</button>
-            <p className="top-part">Follow us on:</p>
-            <div className="footer-social">
+            <button type="submit">SUBMIT</button>
+          </div>
+          <div className="social-section">
+            <p>Follow us on:</p>
+            <div className="social-icons">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
               >
                 <FaFacebook />
               </a>
@@ -62,6 +99,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
               >
                 <FaTwitter />
               </a>
@@ -69,6 +107,7 @@ const Footer = () => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
               >
                 <FaYoutube />
               </a>
@@ -78,9 +117,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright">
-        &copy; 2025 Weboum Technology Private Limited. All rights reserved.
-        <br />
-        Terms of services
+        <p>
+          © 2025 Weboum Technology Private Limited. All rights reserved. Terms
+          of services
+        </p>
       </div>
     </div>
   );

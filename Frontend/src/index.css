@@ -4,6 +4,55 @@
 
 /* hero */
 
+.hero-section {
+  text-align: center;
+  padding: 6rem 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #85005f, #281d2a);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cta-buttons {
+  display: inline-block;
+  background-color: white;
+  color: rgb(168, 22, 22);
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 1000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-buttons:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.5rem;
+  }
+}
+
 .hero {
   color: white;
   text-align: center;
@@ -76,7 +125,7 @@
   background: white;
   border-radius: 10px;
   padding: 10px;
-  text-align: center;
+  text-align: start;
 }
 
 .sidebar a {
@@ -285,9 +334,8 @@
   width: 100%;
   max-width: 500px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  margin-left: auto; 
+  margin-left: auto;
 }
-
 
 .form-heading {
   font-weight: 700;
@@ -341,7 +389,6 @@ textarea.form-control {
   color: white;
   text-align: center;
   width: 100%;
-  
 }
 
 .testimonial-container {
@@ -353,9 +400,13 @@ textarea.form-control {
 .testimonial-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial-carousel {
@@ -432,7 +483,6 @@ textarea.form-control {
   margin-top: 30px;
 }
 
-
 .arrow {
   background: #fff;
   color: #6a005f;
@@ -504,15 +554,16 @@ textarea.form-control {
   font-size: 32px;
   font-weight: 700;
   color: #09080d;
-  float: left;
+  text-align: start;
+  padding-right: 90px;
 }
 
 .cta-text {
   font-size: 18px;
   color: #333;
   max-width: 600px;
-  margin: auto;
-  float: left;
+
+  text-align: start;
 }
 
 .cta-right {

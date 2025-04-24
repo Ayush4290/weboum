@@ -8,9 +8,13 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import Sub_Header from "../Sub_Header";
+import Days from "./Days";
 
 const Contact = () => {
   return (
+   <>
+   <Sub_Header title="Contact Us" />
     <section className="approach-section">
       <div className="approach-row">
         {/* Left Section */}
@@ -68,6 +72,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    <Days/>
+   </>
   );
 };
 
