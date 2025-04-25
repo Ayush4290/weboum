@@ -6,10 +6,10 @@ import Days from "../about-us/Days";
 const WebsiteDesign = () => {
   return (
     <>
-      <Sub_Header />
+      <Sub_Header  title="Website Designing" />
       <section className="design-section">
-        <div className="container">
-          {/* First Block */}
+        <div className="container">       
+          {/* First Block */}           
           <div className="row align-items-center mb-5">
             <div className="col-md-6">
               <h3 className="section-title">
@@ -115,3 +115,13 @@ const WebsiteDesign = () => {
 };
 
 export default WebsiteDesign;
+
+
+
+
+
+
+
+
+
+

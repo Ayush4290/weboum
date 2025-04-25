@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import BuildStart from "./about-us/BulidStart";
 
-const HeroSection = () => {
+const Home = () => {
   const services = [
     {
       img: "image/service/MVP.png",
@@ -59,7 +60,7 @@ const HeroSection = () => {
     },
     {
       img: "image/service/eCommerce.png",
-      alt: "eCommerce",
+      alt: "E-Commerce",
       title: "eCommerce Solutions",
       desc: "Scalable solutions for effortless shopping experiences and business growth.",
     },
@@ -115,6 +116,7 @@ const HeroSection = () => {
       text: "We believe software should not only perform well but also provide an excellent user experience. Our UI/UX experts design intuitive, user-friendly solutions.",
     },
   ];
+
   const testimonials = [
     {
       name: "Jill Cabana",
@@ -136,79 +138,76 @@ const HeroSection = () => {
     },
   ];
 
-  const [setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrev = () =>
     setCurrentSlide((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     );
+
   const handleNext = () =>
     setCurrentSlide((prev) =>
       prev === testimonials.length - 1 ? 0 : prev + 1
     );
 
   return (
-    <>
-      <div className="hero-section">
-        <h1>Unlock unlimited growth with premium custom development</h1>
-        <a href="/" className="cta-buttons">
-          Start Building Today!
-        </a>
-      </div>
-      {/* our services  */}
-      <div>
-        <section id="services" className="services-section">
-          <div className="container">
-            <div className="row">
-              {/* Sidebar */}
-              <div className="col-sidebar-col">
-                <div className="sidebar">
-                  <a href="#services">Our Services</a>
-                  <a href="#portfolio">Our Portfolio</a>
-                  <a href="#why-choose-us">Why Choose Us</a>
-                  <a href="#process">Process We Follow</a>
-                  <a href="#contact">Contact Us</a>
-                  <a href="#testimonials">Our Testimonial</a>
-                </div>
+    <div className="home-page">
+      {/* Hero Section */}
+    <BuildStart/>
+
+      {/* Our Services */}
+      <section id="services" className="services-section">
+        <div className="container">
+          <div className="row">
+            {/* Sidebar */}
+            <div className="sidebar-col">
+              <div className="sidebar">
+                <a href="#services">Our Services</a>
+                <a href="#portfolio">Our Portfolio</a>
+                <a href="#why-choose-us">Why Choose Us</a>
+                <a href="#process">Process We Follow</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#testimonials">Our Testimonial</a>
+              </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="content-col">
+              <h2 className="section-title">OUR SERVICES</h2>
+              <p className="section-desc">
+                Weboum is your trusted partner for outsourced software
+                development, specializing in custom product development,
+                cutting-edge eCommerce solutions, modern branding, and
+                high-performance digital marketing—designed to drive leads,
+                boost sales, and accelerate business growth.
+              </p>
+
+              <div className="services-grid">
+                {services.map((service, index) => (
+                  <div className="service-card" key={index}>
+                    <img
+                      src={service.img}
+                      alt={service.alt}
+                      className="service-icon"
+                    />
+                    <div>
+                      <div className="service-title">{service.title}</div>
+                      <div className="service-desc">{service.desc}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
 
-              {/* Main Content */}
-              <div className="col content-col">
-                <h2 className="section-title">OUR SERVICES</h2>
-                <p className="section-desc">
-                  Weboum is your trusted partner for outsourced software
-                  development, specializing in custom product development,
-                  cutting-edge eCommerce solutions, modern branding, and
-                  high-performance digital marketing—designed to drive leads,
-                  boost sales, and accelerate business growth.
-                </p>
-
-                <div className="services-grid">
-                  {services.map((service, index) => (
-                    <div className="service-card" key={index}>
-                      <img
-                        src={service.img}
-                        alt={service.alt}
-                        className="service-icon"
-                      />
-                      <div>
-                        <div className="service-title">{service.title}</div>
-                        <div className="service-desc">{service.desc}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div id="portfolio" className="portfolio-section">
-                  <h2 className="section-title">OUR PORTFOLIO</h2>
-                </div>
+              <div id="portfolio" className="portfolio-section">
+                <h2 className="section-title">OUR PORTFOLIO</h2>
+                {/* Add your portfolio content here */}
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      {/* our portfolio */}
+      {/* Why Choose Us */}
       <section id="why-choose-us" className="why-choose-section">
         <div className="why-container">
           <h2 className="why-title">WHY CHOOSE US</h2>
@@ -216,9 +215,9 @@ const HeroSection = () => {
             Trusted software design, develop and digital marketing company
           </h5>
           <p className="why-lead">
-            In today’s digital landscape, a strong online presence is no longer
-            a luxury—it’s a necessity. Choosing the right partner to guide you
-            through this complex world is crucial. Here’s why Weboum is the
+            In today's digital landscape, a strong online presence is no longer
+            a luxury—it's a necessity. Choosing the right partner to guide you
+            through this complex world is crucial. Here's why Weboum is the
             perfect choice for your business:
           </p>
 
@@ -237,95 +236,96 @@ const HeroSection = () => {
       </section>
 
       {/* Process We Follow */}
-      <div>
-        <section id="process" className="process-section">
-          <div className="process-container">
-            <h2 className="process-heading">Process We Follow</h2>
-            <p className="process-description">
-              Weboum Technologies invites you to embark on a seamless journey
-              from concept to code. We adhere to a comprehensive software
-              development process that guarantees transparency and successful
-              delivery of solutions.
-            </p>
-            <img
-              src="image/Process-We-Follow.png"
-              alt="Process We Follow"
-              className="process-image"
-            />
-          </div>
-        </section>
-      </div>
+      <section id="process" className="process-section">
+        <div className="process-container">
+          <h2 className="process-heading">Process We Follow</h2>
+          <p className="process-description">
+            Weboum Technologies invites you to embark on a seamless journey from
+            concept to code. We adhere to a comprehensive software development
+            process that guarantees transparency and successful delivery of
+            solutions.
+          </p>
+          <img
+            src="image/Process-We-Follow.png"
+            alt="Process We Follow"
+            className="process-image"
+          />
+        </div>
+      </section>
 
-      {/* Talk to our Experts about your Project Today! */}
-      <div>
-        <section
-          id="contact"
-          className="contact-section"
-          style={{ backgroundImage: "url('image/contact.jpeg')" }}
-        >
-          <div className="container">
-            <div className="contact-row">
-              <div className="contact-col-image"></div>
+      {/* Contact Us */}
+      <section
+        id="contact"
+        className="contact-section"
+        style={{ backgroundImage: "url('image/contact.jpeg')" }}
+      >
+        <div className="container">
+          <div className="contact-row">
+            <div className="contact-col-image"></div>
 
-              <div className="contact-col-form">
-                <div className="form-container">
-                  <div className="form-heading">
-                    Talk to our Experts about your Project Today!
-                  </div>
-                  <form>
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Name"
-                        required
-                      />
-                    </div>
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                    <div className="form-group">
-                      <input
-                        type="tel"
-                        className="form-control"
-                        placeholder="Phone"
-                        required
-                      />
-                    </div>
-                    <div className="form-group">
-                      <textarea
-                        className="form-control"
-                        rows="4"
-                        placeholder="Message"
-                        required
-                      ></textarea>
-                    </div>
-                    <button type="submit" className="btn-submit">
-                      Submit Now
-                    </button>
-                  </form>
+            <div className="contact-col-form">
+              <div className="form-container">
+                <div className="form-heading">
+                  Talk to our Experts about your Project Today!
                 </div>
+                <form>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <textarea
+                      className="form-control"
+                      rows="4"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" className="btn-submit">
+                    Submit Now
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      {/* OUR TESTIMONIALS */}
+      {/* Testimonials */}
       <section id="testimonials" className="testimonial-section">
         <div className="container">
           <h2 className="testimonial-title">OUR TESTIMONIALS</h2>
 
           <div className="testimonial-carousel">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="testimonial-item">
+              <div
+                key={index}
+                className={`testimonial-item ${
+                  index === currentSlide ? "active" : ""
+                }`}
+              >
                 <div className="testimonial-box">
-                  <p>{testimonial.text}</p>
+                  <p className="testimonial-text">{testimonial.text}</p>
                   <div className="stars">★ ★ ★ ★ ★</div>
                   <img
                     src={testimonial.image}
@@ -352,7 +352,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/*  GET FREE CONSULTATION */}
+      {/* CTA Section */}
       <section className="cta-section">
         <div className="cta-container">
           <div className="cta-left">
@@ -363,14 +363,14 @@ const HeroSection = () => {
             </p>
           </div>
           <div className="cta-right">
-            <a href="#" className="cta-button">
+            <a href="#contact" className="cta-button">
               GET FREE CONSULTATION
             </a>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
-export default HeroSection;
+export default Home;

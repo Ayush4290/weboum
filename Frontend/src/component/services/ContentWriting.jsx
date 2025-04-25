@@ -5,8 +5,8 @@ import Days from "../about-us/Days";
 
 const ContentWriting = () => {
   return (
-    <>
-     <Sub_Header title="Content Writing" />
+    <> 
+     <Sub_Header title="Content Writing" />  
       <section className="section">
         <div className="container">
           <div className="custom-row">

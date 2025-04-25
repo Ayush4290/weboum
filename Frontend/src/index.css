@@ -2,97 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* hero */
+/* Hero Section */
 
-.hero-section {
-  text-align: center;
-  padding: 6rem 1rem;
-  max-width: 1800px;
-  margin: 0 auto;
-  background: linear-gradient(to right, #85005f, #4a0457);
-}
 
-.hero-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
-}
-
-.cta-buttons {
-  display: inline-block;
-  background-color: white;
-  color: rgb(103, 36, 36);
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 1000;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.cta-buttons:hover {
-  background-color: #f8f8f8;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 576px) {
-  .navbar {
-    padding: 1rem;
-  }
-
-  .hero-section {
-    padding: 3rem 1rem;
-  }
-
-  .hero-section h1 {
-    font-size: 1.75rem;
-  }
-
-  .cta-button {
-    padding: 0.6rem 1.5rem;
-  }
-}
-
-.hero {
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  height: 400px;
-}
-.hero h1 {
-  padding-top: 40px;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  color: #e0e0e0;
-}
-
-.btn-white {
-  background-color: #ffffff;
-  font-weight: 600;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 8px;
-  color: #600047;
-}
-
-@media (max-width: 576px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
-/* services */
-/* Container */
-/* ServicesSection.css */
+/* Service Section */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -100,28 +13,16 @@
   font-family: Arial, sans-serif;
 }
 
-/* Services Section */
 .services-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
 }
 
-/* Row Layout */
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Sidebar Column */
-.sidebar-col {
-  flex: 1 1 20%;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-}
-
-/* Sidebar */
 .sidebar {
   width: 250px;
   background: white;
@@ -146,13 +47,11 @@
   color: #8b008b;
 }
 
-/* Content Column */
 .content-col {
   flex: 1 1 75%;
   padding: 20px;
 }
 
-/* Section Titles and Descriptions */
 .section-title {
   font-size: 28px;
   font-weight: 700;
@@ -167,14 +66,12 @@
   color: #555;
 }
 
-/* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
-/* Service Card */
 .service-card {
   background-color: white;
   border: none;
@@ -192,7 +89,6 @@
   background-color: #f0f0f0;
 }
 
-/* Icon inside service card */
 .service-icon {
   width: 50px;
   height: 50px;
@@ -200,14 +96,12 @@
   object-fit: contain;
 }
 
-/* Title inside service card */
 .service-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-/* Description inside service card */
 .service-desc {
   font-size: 14px;
   color: #555;
@@ -217,6 +111,7 @@
   margin-top: 50px;
 }
 
+/* Why Choose Us Section */
 .why-choose-section {
   background-color: #600047;
   color: white;
@@ -284,6 +179,7 @@
   line-height: 1.5;
 }
 
+/* Process Section */
 .process-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -315,18 +211,30 @@
   padding-right: 100px;
 }
 
-/* contact */
+/* Contact Section */
 .contact-section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 60px;
   min-height: 100vh;
-  background-image: url("image/contact.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.contact-row {
+  display: flex;
+  width: 100%;
+}
+
+.contact-col-image {
+  flex: 1;
+}
+
+.contact-col-form {
+  flex: 1;
 }
 
 .form-container {
@@ -381,35 +289,22 @@ textarea.form-control {
   background-color: #001f5c;
 }
 
-.carousel-item {
-  padding: 40px 0;
-}
-
-/* TestimonialSection.css */
-
+/* Testimonial Section */
 .testimonial-section {
   background-color: #6a005f;
   color: white;
   text-align: center;
+  padding: 60px 20px;
   width: 100%;
-}
-
-.testimonial-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
 }
 
 .testimonial-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .testimonial-carousel {
@@ -419,7 +314,7 @@ textarea.form-control {
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 0;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
@@ -509,31 +404,7 @@ textarea.form-control {
   transform: scale(1.1);
 }
 
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-  .testimonial-item {
-    flex: 0 0 100%;
-    min-height: 250px;
-  }
-
-  .testimonial-title {
-    font-size: 28px;
-  }
-
-  .testimonial-text {
-    font-size: 14px;
-  }
-}
-
-/* Tablet responsive styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .testimonial-item {
-    flex: 0 0 calc(50% - 20px);
-    min-height: 280px;
-  }
-}
-
-/*CONSULTATION  */
+/* CTA Section */
 .cta-section {
   padding: 64px 20px;
   background-color: #f8f8f8;
@@ -565,7 +436,6 @@ textarea.form-control {
   font-size: 18px;
   color: #333;
   max-width: 600px;
-
   text-align: start;
 }
 
@@ -589,7 +459,38 @@ textarea.form-control {
   background-color: #001b5f;
 }
 
-/* Responsive */
+/* Responsive Designs */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 3rem 0.2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .cta-buttons {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .testimonial-item {
+    flex: 0 0 100%;
+    min-height: 250px;
+  }
+
+  .testimonial-title {
+    font-size: 28px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 768px) {
   .cta-container {
     flex-direction: row;
@@ -604,5 +505,33 @@ textarea.form-control {
     flex: 1;
     text-align: right;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .process-image {
+    max-width: 100%;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .process-image {
+    max-width: 100%;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-image {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-image {
+    max-width: 100%;
+    padding-right: 10px;
   }
 }

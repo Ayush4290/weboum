@@ -40,12 +40,17 @@ const Header = () => {
             />
           </a>
 
+          {/* Mobile menu toggle button */}
           <button
             className="menu-toggle"
             onClick={toggleMobileMenu}
             aria-label="Toggle navigation"
           >
-            <span className="menu-icon"></span>
+            {mobileMenuOpen ? (
+              <span className="close-icon">✕</span>
+            ) : (
+              <span className="hamburger-icon">≡</span>
+            )}
           </button>
 
           <div className={`menu ${mobileMenuOpen ? "menu-open" : ""}`}>
@@ -63,7 +68,10 @@ const Header = () => {
                       {menu.dropdownKey && (
                         <BiCaretDown
                           className="menu-icon"
-                          onClick={() => toggleDropdown(menu.dropdownKey)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleDropdown(menu.dropdownKey);
+                          }}
                         />
                       )}
                     </div>

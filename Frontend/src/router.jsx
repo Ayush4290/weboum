@@ -4,7 +4,7 @@ import AboutUs from "./component/about-us/AboutUs";
 import Careers from "./component/about-us/Careers";
 import Contact from "./component/about-us/Contact";
 import DigitalMarketingSolutions from "./component/about-us/DigitalMarketingSolutions";
-import HostingManagement from "./component/about-us/HostingManagement";
+// import HostingManagement from "./component/about-us/HostingManagement";
 import SamplePage from "./component/about-us/SamplePage";
 import WhyUs from "./component/about-us/WhyUs";
 import HeroSection from "./component/Home";
@@ -27,6 +27,8 @@ import WebHostingServices from "./component/soultions/WebHostingServices";
 import All_Logos from "./component/All_Logos";
 import HireDeveloper from "./component/HireDeveloper";
 import Days from "./component/about-us/Days";
+import BuildStart from "./component/about-us/BulidStart";
+
 
 const router = createBrowserRouter([
   {
@@ -39,7 +41,7 @@ const router = createBrowserRouter([
       { path: "/careers", element: <Careers /> },
       { path: "/contact", element: <Contact /> },
       { path: "/sample-page", element: <SamplePage /> },
-      { path: "/hoisting-management", element: <HostingManagement /> },
+      // { path: "/hoisting-management", element: <HostingManagement /> },
       {
         path: "/digital-marketing-solutions",
         element: <DigitalMarketingSolutions />,
@@ -71,7 +73,8 @@ const router = createBrowserRouter([
       { path: "/request-a-quote", element: <RequestAQuote /> },
       { path: "/all-logos", element: <All_Logos /> },
       {path:"/hire-developer", element:<HireDeveloper/>},
-      {path:"/days",element:<Days/>}
+      {path:"/days",element:<Days/>},
+      {path:"/build-start",element:<BuildStart/>}
     ],
   },
 ]);
