@@ -6,7 +6,7 @@ import Days from "../about-us/Days";
 const ProductLifecycleManagement = () => {
   return (
     <>
-      <Sub_Header />
+      <Sub_Header title="Product Lifecycle Management" />
       <div className="page">
         <div className="section-row">
           <div className="section-image">

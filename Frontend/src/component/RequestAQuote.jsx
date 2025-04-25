@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/RequestAQuote.css";
+import Days from "./about-us/Days";
 
 const RequestAQuote = () => {
   const skills = ["React", "Angular", "PHP", "Node", "HTML", "Javascript", "SEO"];
@@ -11,6 +12,7 @@ const RequestAQuote = () => {
   const workTimes = ["Full-Time", "Part-Time"];
 
   return (
+  <>
     <div className="requestaQuote-container">
       <h4 className="requestaQuote-subtitle">Weboum – Send Us A Message</h4>
       <h2 className="requestaQuote-title">
@@ -48,6 +50,8 @@ const RequestAQuote = () => {
         <button className="requestaQuote-button">CONTINUE</button>
       </div>
     </div>
+   <Days/>
+  </>
   );
 };
 

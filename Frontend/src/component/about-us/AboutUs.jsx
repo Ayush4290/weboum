@@ -59,20 +59,17 @@ const AboutUs = () => {
                 campaigns, as well as providing ongoing support and maintenance.
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 mt-4 mt-lg-0 text-center">
+            <div className="col-lg-5 col-md-12 mt-4 mt-lg-0 image-container">
               <img
                 src="image/development-about.jpg"
                 alt="Technology Graphic"
-                className="img-fluid"
+                className="img-fluid about-image"
               />
             </div>
           </div>
 
           {/* Mission & Vision Section */}
-          <div
-            className="about-missionrow about-content-section container-fluid"
-            style={{ paddingTop: "20px" }}
-          >
+          <div className="about-missionrow about-content-section container-fluid">
             <div className="col-12">
               <h4>
                 <strong>Our Mission:</strong>
@@ -116,7 +113,7 @@ const AboutUs = () => {
                 <li>
                   <strong>Service</strong> – Seek to empower and enable our
                   clients. Consider ourselves successful not when we deliver our
-                  client’s final product but when the product is launched and
+                  client's final product but when the product is launched and
                   meets success.
                 </li>
                 <li>
@@ -132,11 +129,11 @@ const AboutUs = () => {
                 <li>
                   <strong>Growth</strong> – Success is a journey, not a
                   destination. Seek to multiply/increase what we have – wealth,
-                  skills, influence, and our client’s business.
+                  skills, influence, and our client's business.
                 </li>
               </ul>
               <p>
-                It’s the quality which matters, not the quantity of work for us.
+                It's the quality which matters, not the quantity of work for us.
                 We are the{" "}
                 <strong>leading providers of high-quality designs</strong>.
                 Since our inception, we are committed to delivering solutions{" "}
@@ -146,6 +143,21 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      
+      {/* Chat button */}
+      <div className="fixed-chat-button">
+        <button className="chat-btn">
+          <div className="chat-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" stroke="#000000" strokeWidth="1.5"/>
+              <path d="M8 12H8.01" stroke="#000000" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M12 12H12.01" stroke="#000000" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M16 12H16.01" stroke="#000000" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </div>
+        </button>
+      </div>
+      
       <Days />
     </>
   );
